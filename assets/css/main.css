@@ -3812,3 +3812,31 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+  .persona-table {
+    display: flex;
+    font-size: 12px;
+    border: 1px #bfbfbf solid;
+  }
+
+  .persona-table em, .persona-table b {
+    font-size: 16px;
+  }
+
+  .persona-col {
+    padding: 2px;
+    padding-left: 5px;
+    display: inline-block;
+    width: 33.33%;
+    border-right: 1px #bfbfbf solid;
+  }
+
+  .persona-title {
+    background: black;
+    color: white;
+    padding-left: 10px;
+  }
+
+  .persona-col img {
+    padding: 2px;
+  }
