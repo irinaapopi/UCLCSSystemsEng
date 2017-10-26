@@ -345,7 +345,7 @@
             chart.data.labels.push(["00:00"]);
 
             chart.data.datasets.forEach(function (dataset) {
-				dataset.data.push(randomScalingFactor(3,6));
+				dataset.data.push(randomScalingFactor());
             });
 
 			chart.update();
