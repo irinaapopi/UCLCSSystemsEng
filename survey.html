@@ -56,9 +56,11 @@
 						<section class="wrapper style5">
 							<div class="inner">
 								<section>
-									<div class="chart-container" style="position: relative; height:40vh; width:100%; margin-bottom: 100px">
-										<canvas id="chart" style="margin: 0 auto; margin-top: -80px"></canvas>
+									<div class="chart-container" style="position: relative; height:80vh; width:100%; margin-bottom: 100px">
+										<canvas id="chart1" style="float: left;max-width: 50%; height: 90%;"></canvas>
+										<canvas id="chart2" style="float: right;max-width: 50%; height: 90%;"></canvas>
 									</div>
+
 								</section>
 
 							</div>
@@ -80,43 +82,65 @@
 			<script src="Chart.js/samples/utils.js"></script>
 
 	</body>
-<<<<<<< HEAD
 
 <script>
-	var ctx = document.getElementById("chart");
-	var chart = new Chart(ctx,{
-    type: 'pie',
-    data: data = {
-        datasets: [{
-            data: [10, 20, 30],
-            backgroundColor: [
-                '#5888eb',
-                '#cc65fe',
-                '#eb101f'
-            ],
-            label: 'Chatbot Survey'
-        }],
-		labels: [
-                'Red',
-                'Yellow',
-                'Blue'
-            ],
-        options: {
-            responsive: false,
-			title: {
+	var ctx1 = document.getElementById("chart1");
+        var chart1 = new Chart(ctx1, {
+                type: 'doughnut',
+                data: {
+                    labels: ["Red","Yellow","Blue"],
+                    datasets: [{
+                        data: [randomScalingFactor(),randomScalingFactor(),randomScalingFactor()],
+						backgroundColor: [
+						    window.chartColors.green,
+							window.chartColors.yellow,
+							window.chartColors.purple,
+						],
+						label: 'First Chart'
+                    }],
+					labels: [
+					    "Red","Yellow","Blue"
+					]
+                },
+                options: {
+                    responsive: true,
+                    title: {
                         display: true,
-                        text: 'Chatbot Survey',
+                        text: 'UI Survey',
 						fontSize: 30,
 						padding: 20
                     }
-        }
-    }
-    });
+                }
+		});
 
-	chart.canvas.parentNode.style.height = '500px';
+	var ctx2 = document.getElementById("chart2");
+        var chart2 = new Chart(ctx2, {
+                type: 'doughnut',
+                data: {
+                    labels: ["Red","Yellow","Blue"],
+                    datasets: [{
+                        data: [randomScalingFactor(),randomScalingFactor(),randomScalingFactor()],
+						backgroundColor: [
+						    window.chartColors.grey,
+							window.chartColors.blue,
+							window.chartColors.red,
+						],
+						label: 'First Chart'
+                    }],
+					labels: [
+					    "Red","Yellow","Blue"
+					]
+                },
+                options: {
+                    responsive: true,
+                    title: {
+                        display: true,
+                        text: 'Chatbox Survey',
+						fontSize: 30,
+						padding: 20
+                    }
+                }
+		});
 
 </script>
 </html>
-=======
-</html>
->>>>>>> c9a700043bb8b39d90ec2eb8fa5a5d4a2d67e159
