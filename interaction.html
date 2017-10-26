@@ -51,10 +51,34 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>User Interaction</h2>
+							<h2>User Interaction 1 - User Interface Add-Ons</h2>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
+
+								<section>
+									<h4>Interacting with the graph prototype</h4>
+									<p>For the first part of out prototype, our team decided to begin by sketching some of ways in which the user can interact with the graphing tools. Thus,
+									in the sketches below, one can see the steps the user should take in order to see the data gathered in the past week and how the graph should look like:</p>
+									<hr />
+								</section>
+
+								<section>
+									<div class="12u"><span class="image fit"><img src="images/poza1.jpg" alt="" /></span></div>
+									<hr />
+								</section>
+
+								<section>
+									<h4>Chart.js</h4>
+									<p> After changing the design of our initial sketches, we decided to add a "Remove" button for the Actual Production line instead of using a check-box. This could later be changed, as too many buttons
+									could make the UI harder to navigate. </p>
+									<p> We used the library Chart.js to implement the interactive Prototype of the graph. The user can now click the "Add Actual Production" or the "Remove Actual Production" buttons to
+									show or hide the Actual Production line and the "1 hour" button to show the Revenue and Price Prediction for the next hour. For now, just this
+									button is implemented and can be clicked multiple times to show a further prediction. Nevertheless, the current prediction lines are plotted
+									using randomized data, which is due to be replaced with a proper dataset at a later stage of the project. One of the main aims is to also improve
+									the accuracy of the prediction lines using machine learning algorithms.</p>
+									<hr />
+								</section>
 
 								<section>
 									<div class="chart-container" style="position: relative; height:40vh; width:100%; margin-bottom: 100px">
@@ -72,14 +96,6 @@
 											<button id="1month" onClick="this.disabled = true;">1month</button>
 										</li>
 									</ul>
-								</section>
-								<section style="min-height: 100%; width: 100%; background-color: red">
-									<div style="background-color: red;">
-										<script type='text/javascript' src='https://app.botsociety.io/js/lib/embedsoc.js'></script>
-										<span class="link" style="float: left; background-color: black; margin-bottom: 1%"><a class='botsoc' href='https://app.botsociety.io/emb/59efb55d7844dd0f0098a26b?p=afe77945cde550176ac62eb43b802cd88e0ad2aa' target='medium'></a></span>
-										<span class="explanation" style="display: block;background-color: #00f0ff; overflow: hidden">Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien. Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</span>
-
-									</div>
 								</section>
 							</div>
 						</section>
