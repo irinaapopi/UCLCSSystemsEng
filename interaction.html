@@ -56,6 +56,13 @@
 							<div class="inner">
 
 								<section>
+									<div class="chart-container" style="position: relative; height:40vh; width:100%; margin-bottom: 100px">
+										<canvas id="chart" style="margin: 0 auto"></canvas>
+									</div>
+									<button id="remove" onClick="this.disabled = true;">Add Actual Production</button>
+									<button id="add" type="button" disabled>Remove Actual Production</button>
+								</section>
+								<section>
 									<h4>Text</h4>
 									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
 									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
@@ -391,6 +398,236 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="Chart.js/dist/Chart.js"></script>
+
+	<button id="randomizeData">Randomize Data</button>
+	<button id="addDataset">Add Dataset</button>
+	<button id="removeDataset">Remove Dataset</button>
+	<button id="addData">Add Data</button>
+	<button id="removeData">Remove Data</button>
 
 	</body>
+
+<script>
+
+        var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var ctx = document.getElementById("chart");
+        var chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["00:00","3:00","6:00","9:00","12:00", "15:00", "18:00", "21:00", "24:00"],
+                    datasets: [{
+                        label: "Production Forecast",
+                        backgroundColor: '#cc65fe',
+                        borderColor: '#cc65fe',
+                        data: [{
+                            x: 10,
+                            y: 10
+                        }, {
+                            x: 15,
+                            y: 20
+                        }, {
+                            x: 25,
+                            y: 25
+                        }, {
+                            x: 30,
+                            y: 30
+                        }, {
+                            x: 27,
+                            y: 27
+                        }, {
+                            x: 21,
+                            y: 21
+                        }, {
+                            x: 18,
+                            y: 18
+                        }, {
+                            x: 15,
+                            y: 15
+                        }, {
+                            x: 10,
+                            y: 10
+                        }
+                        ],
+                        fill: false,
+						cubicInterpolationMode: 'default',
+                    }, {
+                        label: "Solar Energy Price",
+                        fill: false,
+                        backgroundColor: '#36a2eb',
+                        borderColor: '#36a2eb',
+                        data: [
+                            {
+                                x: 10,
+                                y: 20
+                            }, {
+                                x: 15,
+                                y: 15
+                            }, {
+								x: 15,
+								y: 15
+							}, {
+								x: 15,
+								y: 20
+							}, {
+								x: 15,
+								y: 20
+							}, {
+								x: 15,
+								y: 20
+							}, {
+								x: 15,
+								y: 20
+							}, {
+								x: 15,
+								y: 20
+							}, {
+								x: 15,
+								y: 20
+							}
+                        ],
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    title: {
+                        display: true,
+                        text: 'Chart.js Line Chart'
+                    },
+                    tooltips: {
+                        mode: 'index',
+                        intersect: false,
+                    },
+                    hover: {
+                        mode: 'nearest',
+                        intersect: true
+                    },
+                    scales: {
+                        xAxes: [{
+                            display: true,
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Month'
+                            }
+                        }],
+                        yAxes: [{
+                            display: true,
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Value'
+                            }
+                        }]
+                    }
+                }
+
+		});
+
+        document.getElementById('remove').addEventListener('click', function () {
+            this.disabled = true;
+            document.getElementById('add').disabled = false;
+            var set = {
+                label: 'Actual Production',
+				backgroundColor: '#eb101f',
+				borderColor: '#eb101f',
+				fill: false,
+                data: [
+                    {
+						x: 15,
+						y: 22
+					},
+					{
+						x: 15,
+						y: 27
+					},
+					{
+						x: 15,
+						y: 28
+					},
+					{
+						x: 15,
+						y: 23
+					},
+					{
+						x: 15,
+						y: 23
+					},
+					{
+						x: 15,
+						y: 23
+					},
+					{
+						x: 15,
+						y: 23
+					},
+					{
+						x: 15,
+						y: 23
+					},
+					{
+						x: 15,
+						y: 23
+					}
+
+				]
+			}
+			chart.data.datasets.push(set);
+			chart.update();
+        });
+
+        document.getElementById('add').addEventListener('click', function () {
+            this.disabled = true;
+            document.getElementById('remove').disabled = false;
+            var set = {
+                label: 'Actual Production',
+				backgroundColor: '#eb101f',
+				borderColor: '#eb101f',
+				fill: false,
+                data: [
+                    {
+						x: 15,
+						y: 22
+					},
+					{
+						x: 15,
+						y: 27
+					},
+					{
+						x: 15,
+						y: 28
+					},
+					{
+						x: 15,
+						y: 23
+					},
+					{
+						x: 15,
+						y: 23
+					},
+					{
+						x: 15,
+						y: 23
+					},
+					{
+						x: 15,
+						y: 23
+					},
+					{
+						x: 15,
+						y: 23
+					},
+					{
+						x: 15,
+						y: 23
+					}
+
+				]
+			}
+			chart.data.datasets.pop(set);
+			chart.update();
+        });
+
+        chart.canvas.parentNode.style.height = '500px';
+
+
+</script>
 </html>
