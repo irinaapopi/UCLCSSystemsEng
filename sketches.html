@@ -22,30 +22,31 @@
 				<!-- Header -->
 					<header id="header">
 						<h1><a href="index.html">Systems Engineering HCI</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Overview</a></li>
-											<li><a href="requirements.html">Requirements</a></li>
-											<li><a href="survey.html">User Survey</a></li>
-											<li><a href="persona1.html">Persona 1</a></li>
-											<li><a href="persona2.html">Persona 2</a></li>
-											<li><a href="scenario.html">Scenario</a></li>
-											<li><a href="sketches.html">Sketches</a></li>
-											<li><a href="iteration.html">Iteration</a></li>
-											<li><a href="alternatives.html">Alternatives</a></li>
-											<li><a href="interaction.html">User Interaction 1</a></li>
-											<li><a href="interaction2.html">User Interaction 2</a></li>
-											<li><a href="evaluation.html">Evaluation</a></li>
-											<li><a href="citations.html">References</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
+            <nav id="nav">
+              <ul>
+                <li class="special">
+                  <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                  <div id="menu">
+                    <ul>
+                      <li><a href="index.html">Overview</a></li>
+                      <li><a href="survey.html">User Survey</a></li>
+                      <li><a href="requirements.html">Requirements</a></li>
+                      <li><a href="persona1.html">Persona 1</a></li>
+                      <li><a href="persona2.html">Persona 2</a></li>
+                      <li><a href="scenario.html">Scenario</a></li>
+                      <li><a href="storyboard.html">Storyboard</a></li>
+                      <li><a href="iteration.html">Iteration</a></li>
+                      <li><a href="sketches.html">Sketches</a></li>
+                      <li><a href="interaction.html">User Interaction 1</a></li>
+                      <li><a href="interaction2.html">User Interaction 2</a></li>
+                      <li><a href="alternatives.html">Alternatives</a></li>
+                      <li><a href="evaluation.html">Evaluation</a></li>
+                      <li><a href="citations.html">References</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
 					</header>
 
 				<!-- Main -->
@@ -57,8 +58,6 @@
 							<div class="inner">
 
 								<section>
-									<h4>Text</h4>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em></p>
 									<div class="slideshow-container">
 										  <div class="mySlides fade">
 										    <div class="numbertext">1 / 4</div>
@@ -84,10 +83,10 @@
 								  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 								</div>
 								<div style="text-align:center">
-								  <span class="dot" onclick="currentSlide(1)"></span> 
-								  <span class="dot" onclick="currentSlide(2)"></span> 
-								  <span class="dot" onclick="currentSlide(3)"></span> 
-								  <span class="dot" onclick="currentSlide(4)"></span> 
+								  <span class="dot" onclick="currentSlide(1)"></span>
+								  <span class="dot" onclick="currentSlide(2)"></span>
+								  <span class="dot" onclick="currentSlide(3)"></span>
+								  <span class="dot" onclick="currentSlide(4)"></span>
 								</div>
 							</div>
 						</section>
@@ -105,7 +104,7 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript">
-				
+
 				var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -121,15 +120,15 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block"; 
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 			</script>

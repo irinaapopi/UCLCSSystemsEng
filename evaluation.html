@@ -22,30 +22,31 @@
 				<!-- Header -->
 					<header id="header">
 						<h1><a href="index.html">Systems Engineering HCI</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Overview</a></li>
-											<li><a href="requirements.html">Requirements</a></li>
-											<li><a href="survey.html">User Survey</a></li>
-											<li><a href="persona1.html">Persona 1</a></li>
-											<li><a href="persona2.html">Persona 2</a></li>
-											<li><a href="scenario.html">Scenario</a></li>
-											<li><a href="sketches.html">Sketches</a></li>
-											<li><a href="iteration.html">Iteration</a></li>
-											<li><a href="alternatives.html">Alternatives</a></li>
-											<li><a href="interaction.html">User Interaction 1</a></li>
-											<li><a href="interaction2.html">User Interaction 2</a></li>
-											<li><a href="evaluation.html">Evaluation</a></li>
-											<li><a href="citations.html">References</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
+            <nav id="nav">
+              <ul>
+                <li class="special">
+                  <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                  <div id="menu">
+                    <ul>
+                      <li><a href="index.html">Overview</a></li>
+                      <li><a href="survey.html">User Survey</a></li>
+                      <li><a href="requirements.html">Requirements</a></li>
+                      <li><a href="persona1.html">Persona 1</a></li>
+                      <li><a href="persona2.html">Persona 2</a></li>
+                      <li><a href="scenario.html">Scenario</a></li>
+                      <li><a href="storyboard.html">Storyboard</a></li>
+                      <li><a href="iteration.html">Iteration</a></li>
+                      <li><a href="sketches.html">Sketches</a></li>
+                      <li><a href="interaction.html">User Interaction 1</a></li>
+                      <li><a href="interaction2.html">User Interaction 2</a></li>
+                      <li><a href="alternatives.html">Alternatives</a></li>
+                      <li><a href="evaluation.html">Evaluation</a></li>
+                      <li><a href="citations.html">References</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
 					</header>
 
 				<!-- Main -->
@@ -64,28 +65,28 @@
 									<table style="width:100%">
 									  <tr>
 									    <th>Problem	no.</th>
-									    <th>Location&Description</th> 
+									    <th>Location&Description</th>
 									    <th>Heuristic</th>
 									    <th>Solution</th>
 									    <th>Severity(0-4)</th>
 									  </tr>
 									  <tr>
 									    <td>1</td>
-									    <td>Survey page - charts were displayed as images and the resolution would vary</td> 
+									    <td>Survey page - charts were displayed as images and the resolution would vary</td>
 									    <td>Aesthetic and minimalist design</td>
 									    <td>Used a javascript library for charts n order to have a clear image of the charts</td>
 									    <td>2</td>
 									  </tr>
 									  <tr>
 									    <td>2</td>
-									    <td>Sketches pages - too many sketches and the user had to scroll a lot</td> 
+									    <td>Sketches pages - too many sketches and the user had to scroll a lot</td>
 									    <td>Aesthetic and minimalist design</td>
 									    <td>Grouped the images in a slidehow</td>
 									    <td>2</td>
 									  </tr>
 									 <tr>
 									    <td>3</td>
-									    <td>User Interaction page -  too much information on the chatbox & graph prototype page</td> 
+									    <td>User Interaction page -  too much information on the chatbox & graph prototype page</td>
 									    <td>Consistency and standards</td>
 									    <td>Separated them in 2 different pages</td>
 									    <td>3</td>
@@ -100,11 +101,11 @@
 
 										<canvas id="chart2" style="float: right;max-width: 50%; height: 100%;"></canvas>
 									</div>
-									
 
 
 
-								
+
+
 
 							</div>
 						</section>
@@ -124,12 +125,12 @@
 			<script src="Chart.js/dist/Chart.js"></script>
 			<script src="Chart.js/samples/utils.js"></script>
 
-		
+
 	</body>
 
 	<script>
-			
-		
+
+
 	var ctx1 = document.getElementById("chart1");
         var chart1 = new Chart(ctx1, {
                 type: 'doughnut',
