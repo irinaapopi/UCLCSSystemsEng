@@ -91,10 +91,13 @@
 											<button id="add" type="button" disabled>Remove Actual Production</button>
 										</li>
 										<li style="padding: 10px; padding-top: 0px">
-											<button id="1day">1day</button>
-											<button id="2days" onClick="this.disabled = true;">2days</button>
+											<button id="1day">3 hours</button>
+											<button id="2days" onClick="this.disabled = true;">1 day</button>
 											<button id="1week" onClick="this.disabled = true;">1week</button>
 											<button id="1month" onClick="this.disabled = true;">1month</button>
+										</li>
+										<li style="padding: 10px; padding-top: 0px">
+											<button id="remove1" type="button" disabled>Remove 3 hours</button>
 										</li>
 									</ul>
 								</section>
@@ -120,7 +123,7 @@
 
 <script>
 
-        var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var HOURS = ["00:00","3:00","6:00","9:00","12:00", "15:00", "18:00", "21:00", "24:00"];
         var ctx = document.getElementById("chart");
         var chart = new Chart(ctx, {
                 type: 'line',
@@ -219,7 +222,7 @@
                             display: true,
                             scaleLabel: {
                                 display: true,
-                                labelString: 'Month'
+                                labelString: 'Hours'
                             }
                         }],
                         yAxes: [{
@@ -343,16 +346,28 @@
         });
 
         document.getElementById('1day').addEventListener('click', function () {
+            document.getElementById('remove1').disabled = false;
             document.getElementById('2days').disabled = true;
             document.getElementById('1week').disabled = true;
             document.getElementById('1month').disabled = true;
 
-            chart.data.labels.push(["00:00"]);
+            var hour = HOURS[chart.data.labels.length % HOURS.length];
+
+            chart.data.labels.push([hour]);
 
             chart.data.datasets.forEach(function (dataset) {
 				dataset.data.push(randomScalingFactor());
             });
 
+			chart.update();
+        });
+        
+        document.getElementById('remove1').addEventListener('click', function () {
+			chart.data.labels.splice(-1, 1);
+
+			chart.data.datasets.forEach(function (dataset, datasetIndex) {
+				dataset.data.pop();
+            });
 			chart.update();
         });
 
