@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="880e7888-971e-4e63-b602-aa0abbd908d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/citations.html" afterPath="$PROJECT_DIR$/citations.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interaction.html" afterPath="$PROJECT_DIR$/interaction.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +22,22 @@
         <entry file="file://$PROJECT_DIR$/interaction2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="42" column="92" lean-forward="false" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
+              <caret line="42" column="71" lean-forward="true" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interaction.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interaction.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1214">
+              <caret line="99" column="102" lean-forward="false" selection-start-line="99" selection-start-column="102" selection-end-line="99" selection-end-column="102" />
+              <folding>
+                <element signature="n#style#0;n#li#0;n#ul#0;n#section#3;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#0;n#section#3;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#ul#0;n#section#3;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,19 +45,28 @@
       <file leaf-file-name="iteration.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iteration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4665">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="384" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="persona1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/persona1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="41" column="92" lean-forward="false" selection-start-line="41" selection-start-column="92" selection-end-line="41" selection-end-column="92" />
-              <folding />
+            <state relative-caret-position="-2112">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#td#0;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/persona2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="615">
-              <caret line="42" column="92" lean-forward="false" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
+              <caret line="42" column="71" lean-forward="false" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -63,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/requirements.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="42" column="92" lean-forward="false" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
+              <caret line="42" column="71" lean-forward="true" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -73,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/scenario.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
-              <caret line="42" column="92" lean-forward="false" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
+              <caret line="42" column="71" lean-forward="false" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -83,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/sketches.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="42" column="92" lean-forward="false" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
+              <caret line="42" column="71" lean-forward="false" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -93,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/survey.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-855">
-              <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+              <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#canvas#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -104,16 +126,17 @@
                 <element signature="n#style#0;n#div#2;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#canvas#0;n#div#2;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#canvas#1;n#div#2;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1509313363000" expanded="true" signature="2126:2131" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="citations.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="citations.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/citations.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+            <state relative-caret-position="420">
+              <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -123,7 +146,7 @@
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="671">
-              <caret line="384" column="0" lean-forward="true" selection-start-line="384" selection-start-column="0" selection-end-line="384" selection-end-column="0" />
+              <caret line="385" column="0" lean-forward="false" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -159,7 +182,6 @@
         <option value="$PROJECT_DIR$/alternatives.html" />
         <option value="$PROJECT_DIR$/evaluation.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/interaction.html" />
         <option value="$PROJECT_DIR$/interaction2.html" />
         <option value="$PROJECT_DIR$/iteration.html" />
         <option value="$PROJECT_DIR$/persona1.html" />
@@ -167,8 +189,9 @@
         <option value="$PROJECT_DIR$/requirements.html" />
         <option value="$PROJECT_DIR$/scenario.html" />
         <option value="$PROJECT_DIR$/sketches.html" />
-        <option value="$PROJECT_DIR$/citations.html" />
         <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/citations.html" />
+        <option value="$PROJECT_DIR$/interaction.html" />
       </list>
     </option>
   </component>
@@ -210,6 +233,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UCLCSSystemsEng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UCLCSSystemsEng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UCLCSSystemsEng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UCLCSSystemsEng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -237,8 +292,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/alternatives.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/css/main.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluation.html</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/sketches.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
@@ -247,10 +301,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/poza1.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/poza2.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/poza3.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/poza4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/poza5.jpg</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -644,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509208730045</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="references page">
+      <created>1509281059092</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1509281059092</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -689,7 +747,8 @@
     <MESSAGE value="2nd user interaction done" />
     <MESSAGE value="survey page" />
     <MESSAGE value="new page order" />
-    <option name="LAST_COMMIT_MESSAGE" value="new page order" />
+    <MESSAGE value="references page" />
+    <option name="LAST_COMMIT_MESSAGE" value="references page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -767,31 +826,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interaction.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="42" column="92" lean-forward="false" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#section#3;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#div#0;n#section#3;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#section#3;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#section#3;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interaction2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="42" column="92" lean-forward="false" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/persona1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="41" column="92" lean-forward="false" selection-start-line="41" selection-start-column="92" selection-end-line="41" selection-end-column="92" />
+          <caret line="41" column="75" lean-forward="true" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
           <folding />
         </state>
       </provider>
@@ -799,7 +837,7 @@
     <entry file="file://$PROJECT_DIR$/persona2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
-          <caret line="42" column="92" lean-forward="false" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
+          <caret line="42" column="71" lean-forward="false" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
           <folding />
         </state>
       </provider>
@@ -807,7 +845,7 @@
     <entry file="file://$PROJECT_DIR$/requirements.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="42" column="92" lean-forward="false" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
+          <caret line="42" column="71" lean-forward="true" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
           <folding />
         </state>
       </provider>
@@ -815,7 +853,7 @@
     <entry file="file://$PROJECT_DIR$/scenario.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
-          <caret line="42" column="92" lean-forward="false" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
+          <caret line="42" column="71" lean-forward="false" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
           <folding />
         </state>
       </provider>
@@ -823,7 +861,7 @@
     <entry file="file://$PROJECT_DIR$/sketches.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="42" column="92" lean-forward="false" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
+          <caret line="42" column="71" lean-forward="false" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
           <folding />
         </state>
       </provider>
@@ -831,7 +869,7 @@
     <entry file="file://$PROJECT_DIR$/survey.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-855">
-          <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#canvas#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -842,31 +880,71 @@
             <element signature="n#style#0;n#div#2;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#canvas#0;n#div#2;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#canvas#1;n#div#2;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1509313363000" expanded="true" signature="2126:2131" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iteration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4665">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="384" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="671">
-          <caret line="384" column="0" lean-forward="true" selection-start-line="384" selection-start-column="0" selection-end-line="384" selection-end-column="0" />
+          <caret line="385" column="0" lean-forward="false" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/citations.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        <state relative-caret-position="420">
+          <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iteration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2112">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#section#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interaction2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="42" column="71" lean-forward="true" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interaction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1214">
+          <caret line="99" column="102" lean-forward="false" selection-start-line="99" selection-start-column="102" selection-end-line="99" selection-end-column="102" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#section#3;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#section#3;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#section#3;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
