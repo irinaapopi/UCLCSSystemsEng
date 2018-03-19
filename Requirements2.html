@@ -1,0 +1,536 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Systems Engineering HCI</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+<body>
+
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="index.html">Systems Engineering HCI</a></h1>
+        <nav id="nav">
+            <ul>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="index.html">Overview</a></li>
+                            <li><a href="Requirements2.html">Requirements</a></li>
+                            <li><a href="Research2.html">Research</a></li>
+                            <li><a href="HCI.html">HCI</a></li>
+                            <li><a href="Testing.html">Testing</a></li>
+                            <li><a href="Evaluation2.html">Evaluation</a></li>
+                            <li><a href="Management.html">Management</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <article id="main">
+        <header>
+            <h2>Requirements</h2>
+        </header>
+        <section class="wrapper style5">
+            <div class="inner">
+
+                <section>
+                    <h4>Project Background and Client</h4>
+                    <p>Elastacloud Limited are a Data Science Consultancy that specializes in Data Science and its practical applications in the Business world.
+                        Renewables AI is a subdivision of Elastacloud that is currently developing a specialized product for the solar industry, and more specifically for people that are directly or indirectly involved with the production of solar energy and the revenue it generates.
+                        During the project, we were in contact with Allan Mitchell, Laura Da Silva (head of of the Data Science Division) and Bianca Furtuna (Data Science).
+                    </p>
+                </section>
+                <section>
+                    <p>The way the application is currently working is as follows: the client logs into his/her personal account that shows the solar plants under his/her management and he/she can visualize a personalized view of the revenue the plants are generating on a daily basis. The application is thus using Microsoft Azure Services, data from the Dark Sky API, data from the plant/s and machine learning to predict the revenue of the solar plants up to 48 hours in advance.</p>
+                    <hr />
+                </section>
+                <section>
+                    <h4>Project Goals</h4>
+                    <p>
+                        As the application is still in its early stages, there are some limitations that affect its prediction accuracy (Random Forest Algorithm is being used that only has an accuracy of up to 80%). As a result, our clients needed a new better algorithm that could be used to predict the solar energy production based on the irradiance forecast. Our team’s first task was thus to address this problem by researching and implementing an additional machine learning model that could be used to accurately predict the energy production.
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        Moreover, our clients underlined the need of having a form of active interaction between the software and the users. Our team’s second task was to integrate a chatbot into their platform that would help the user with gathering quick data about their plants as well as helping them navigate through the platform.
+                    </p>
+                    <hr />
+                </section>
+                <section>
+                    <h4>Requirement gathering</h4>
+                    <p>
+                        On our first meeting with our client, we got to know the company as well as their requirements for the project. We arranged the timeline of the project as well as talked about which features will be prioritized during the development.
+                        As a result, we agreed on a set of MOSCOW requirements with our client. The highest priority requirements are: to implement a chatbot, improve the accuracy of energy generated predictions, implement energy price predictions, and implement plant performance prediction.
+
+                    </p>
+                    <hr />
+                </section>
+                <section>
+                    <h4>Persona</h4>
+                    <p>
+                        While planning the design of our project, we created some user personas that would reflect some typical user profiles.
+                    </p>
+                    <section>
+                        <h5>Persona 1</h5>
+                        <div class="persona-title">
+                            James Smith
+                        </div>
+                        <div class="persona-table">
+                            <div class="persona-col">
+                                <img src="images/persona1.jpg" style="width: 100%;"/>
+                                <p><em>“I want to see the exact revenue my plant is generating on a daily basis.”</em></p>
+                                <p>
+                                    James Smith is the owner of a solar panel from South Wales. Having just started his business, he wants to see how much power his plant is generating and how he can maximize his profit by selling the it at the best price.
+                                </p>
+                            </div>
+                            <div class="persona-col">
+                                <strong>Name</strong> James Smith<br/>
+                                <strong>Type</strong>&nbsp; Owner of a Solar Farm<br/>
+                                <strong>Role</strong>&nbsp; Client of ElastaCloud<br/><br/>
+
+                                <b>Motivations</b>
+                                <ul>
+                                    <li>Help reduce the carbon footprint</li>
+                                    <li>The possibility to see predictions of the price of solar energy</li>
+                                    <li>See accurate prediction of how much solar energy his plant will generate.</li>
+                                </ul>
+
+                                <b>Goals</b>
+                                <ul>
+                                    <li>Increase his profits</li>
+                                    <li>Grow his business</li>
+                                    <li>Increase the solar energy usage in South Wales</li>
+                                </ul>
+
+                                <b>Pain Points</b>
+                                <ul>
+                                    <li>Does not know how the prices for solar energy will be in the future</li>
+                                    <li>Does not know how much solar energy the plant will generate on the future</li>
+                                    <li>Does not know which are the best time to sell solar energy</li>
+                                </ul>
+                            </div>
+                            <div class="persona-col">
+                                <b>Behaviours</b>
+                                <img src="images/persona1b.png" style="width: 100%;"/>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <section>
+                        <h5>Persona 2</h5>
+                        <div class="persona-title">
+                            Mary Frank
+                        </div>
+                        <div class="persona-table">
+                            <div class="persona-col">
+                                <img src="images/persona2.jpg" style="width: 100%;"/>
+                                <p><em>“I want to maintain the growth of  the profit  of my solar energy company.”</em></p>
+                                <p>
+                                    Mary Frank is an asset manager of a solar energy farm with over 15 solar panels in Southampton. She has been struggling to manage the sale of the solar energy her plant is making. Now, she is looking for a way to improve the productivity of the plant.
+                                </p>
+                            </div>
+                            <div class="persona-col">
+                                <strong>Name</strong> Mary Frank<br/>
+                                <strong>Type</strong>&nbsp; Asset manager of a plant<br/>
+                                <strong>Role</strong>&nbsp; Client of ElastaCloud<br/><br/>
+
+                                <b>Motivations</b>
+                                <ul>
+                                    <li>The increasing demand of the solar energy on the market</li>
+                                    <li>The fast growth of the profit in this industry</li>
+                                    <li>The possibility to add more assets under management</li>
+                                </ul>
+
+                                <b>Goals</b>
+                                <ul>
+                                    <li>Grow her business</li>
+                                    <li>Increase the profit of her farm</li>
+                                    <li>Manage her farm effectively</li>
+                                </ul>
+
+                                <b>Pain Points</b>
+                                <ul>
+                                    <li>Struggles to manage this many solar panels</li>
+                                    <li>Big differences between the sale of the energy generated by the solar panels</li>
+                                    <li>Does not know which are the best time to sell solar energy</li>
+                                </ul>
+                            </div>
+                            <div class="persona-col">
+                                <img src="images/persona2b.png" style="width: 100%;"/>
+                            </div>
+                        </div>
+                    </section>
+                    <hr />
+                </section>
+                <section>
+                    <h4>Storyboards</h4>
+                    <p>
+                        One other step we made was to create a storyboard. This helped us to further predict and explore the users’ experience with the platform.
+                    </p>
+                    <section>
+                        <img src="images/storyboard.jpg" style="width: 100%;">
+                    </section>
+                    <hr />
+                </section>
+                <section>
+                    <h4>MoSCoW Requirement List</h4>
+                    <section>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Requirement</th>
+                                    <th>Priority (MOSCOW)</th>
+                                    <th>Type</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Develop a user friendly chatbot that answers simple questions about the user’s plants</td>
+                                    <td>Must have</td>
+                                    <td>Functional</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>The bot must be able to ask for more information if the question is not understood</td>
+                                    <td>Must have</td>
+                                    <td>Functional</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>The bot must be able to access the database in order to get information about the plant/s</td>
+                                    <td>Must have</td>
+                                    <td>Functional</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Develop an accurate model that converts irradiance to energy produced</td>
+                                    <td>Must have</td>
+                                    <td>Functional</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>The user should be able to have a natural conversation with the bot</td>
+                                    <td>Should have</td>
+                                    <td>Functional</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>The bot should be able to learn how to better answer questions</td>
+                                    <td>Should have</td>
+                                    <td>Functional</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Develop a model that predicts the price of solar energy</td>
+                                    <td>Should have</td>
+                                    <td>Functional</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>The bot could display graphs</td>
+                                    <td>Should have</td>
+                                    <td>Functional</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Develop a model that includes additional variables (e.g. weather)</td>
+                                    <td>Could have</td>
+                                    <td>Functional</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+                    </section>
+                    <hr />
+                </section>
+                <section>
+                    <h4>User Cases</h4>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Use Case</th>
+                                <th>Chatbot Start</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>UC1</td>
+                            </tr>
+                            <tr>
+                                <td>Brief Description</td>
+                                <td>The chatbot displays a blank start box</td>
+                            </tr>
+                            <tr>
+                                <td>Primary Actors</td>
+                                <td>User</td>
+                            </tr>
+                            <tr>
+                                <td>Secondary Actors</td>
+                                <td>Chatbot</td>
+                            </tr>
+                            <tr>
+                                <td>Preconditions</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Main Flow</td>
+                                <td>
+                                    <ol>
+                                        <li>
+                                            The user opens the emulator
+                                        </li>
+                                        <li>
+                                            The emulator displays a blank chat box
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Postconditions</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Alternative Flows</td>
+                                <td>None</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Use Case</th>
+                                <th>Chatbot question</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>UC2</td>
+                            </tr>
+                            <tr>
+                                <td>Brief Description</td>
+                                <td>The chatbot answers the user’s question</td>
+                            </tr>
+                            <tr>
+                                <td>Primary Actors</td>
+                                <td>User</td>
+                            </tr>
+                            <tr>
+                                <td>Secondary Actors</td>
+                                <td>Chatbot</td>
+                            </tr>
+                            <tr>
+                                <td>Preconditions</td>
+                                <td>The user has the emulator installed</td>
+                            </tr>
+                            <tr>
+                                <td>Main Flow</td>
+                                <td>
+                                    <ol>
+                                        <li>
+                                            The user enters a question
+                                        </li>
+                                        <li>
+                                            The chatbot processes the intent
+                                        </li>
+                                        <li>
+                                            The chatbot gets the data from the SQL database
+                                        </li>
+                                        <li>
+                                            The chatbot displays the answer for the user’s question
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Postconditions</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Alternative Flows</td>
+                                <td>None</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Use Case</th>
+                                <th>Chatbot clarification </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>UC3</td>
+                            </tr>
+                            <tr>
+                                <td>Brief Description</td>
+                                <td>The chatbot asks the user for additional information in order to answer question</td>
+                            </tr>
+                            <tr>
+                                <td>Primary Actors</td>
+                                <td>User</td>
+                            </tr>
+                            <tr>
+                                <td>Secondary Actors</td>
+                                <td>Chatbot</td>
+                            </tr>
+                            <tr>
+                                <td>Preconditions</td>
+                                <td>The user has the emulator installed</td>
+                            </tr>
+                            <tr>
+                                <td>Main Flow</td>
+                                <td>
+                                    <ol>
+                                        <li>
+                                            The user enters a question
+                                        </li>
+                                        <li>
+                                            The chatbot processes the intent
+                                        </li>
+                                        <li>
+                                            The chatbot does not have enough data to search in the database
+                                        </li>
+                                        <li>
+                                            The chatbot asks the user to specify the missing data
+                                        </li>
+                                        <li>
+                                            The user answers with the missing data
+                                        </li>
+                                        <li>
+                                            The chatbot gets the data from the database
+                                        </li>
+                                        <li>
+                                            The chatbot displays the answer
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Postconditions</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Alternative Flows</td>
+                                <td>None</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Use Case</th>
+                                <th>Chatbot graph</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>UC4</td>
+                            </tr>
+                            <tr>
+                                <td>Brief Description</td>
+                                <td>The chatbot displays a graph</td>
+                            </tr>
+                            <tr>
+                                <td>Primary Actors</td>
+                                <td>User</td>
+                            </tr>
+                            <tr>
+                                <td>Secondary Actors</td>
+                                <td>Chatbot</td>
+                            </tr>
+                            <tr>
+                                <td>Preconditions</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Main Flow</td>
+                                <td>
+                                    <ol>
+                                        <li>
+                                            The user asks for a graph
+                                        </li>
+                                        <li>
+                                            The chatbot processes the question
+                                        </li>
+                                        <li>
+                                            The chatbot gets the data from the SQL database
+                                        </li>
+                                        <li>
+                                            The chatbot generates a chart using plotly.js
+                                        </li>
+                                        <li>
+                                            The chatbot displays the chart to the user
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Postconditions</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Alternative Flows</td>
+                                <td>None</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr />
+                </section>
+
+            </div>
+        </section>
+    </article>
+
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

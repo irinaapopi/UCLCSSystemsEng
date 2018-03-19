@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Systems Engineering HCI</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+<body>
+
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="index.html">Systems Engineering HCI</a></h1>
+        <nav id="nav">
+            <ul>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="index.html">Overview</a></li>
+                            <li><a href="Requirements2.html">Requirements</a></li>
+                            <li><a href="Research2.html">Research</a></li>
+                            <li><a href="HCI.html">HCI</a></li>
+                            <li><a href="Testing.html">Testing</a></li>
+                            <li><a href="Evaluation2.html">Evaluation</a></li>
+                            <li><a href="Management.html">Management</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <article id="main">
+        <header>
+            <h2>Evaluation</h2>
+        </header>
+        <section class="wrapper style5">
+            <div class="inner">
+
+                <section>
+                    <h4>Chatbot Architecture</h4>
+                    <p>In terms of the Chatbot architecture, our team decided to use the Microsoft Azure Bot Framework in order to build and test the bot. How this will will work will be as shown in the diagram below:</p>
+                </section>
+                <section>
+                    <img src="images/bot.png" style="width: 100%;">
+                    <p>Firstly, the chatbot will be connected to a database that contains all the relevant information about the plants in a user's portfolio, so that if the user will ask a specific question, the bot will know where to retrieve that data from.
+                        Secondly, the bot will be developed and trained by our team to to recognize specific topics and intents in order to give appropriate answers to the user. This will be done using the Language Understanding(LUIS) tool provided by Microsoft. LUIS is a machine learning-based service used to build natural language into apps, bots and IoT devices. </p>
+                    <hr />
+                </section>
+                <section>
+                    <h4>Data Science Architecture</h4>
+                    <p>
+                        For the Data Science part of our project, we researched possible algorithms that might give us more precise and accurate predictions of the solar energy production and revenue. We concluded that the Random Forest algorithm is the best solution to begin working with on the implementation of the new features (Plant Performance Forecasting and Energy Prices Forecasting). The algorithm is currently being used by our client for Irradiance Forecasting.
+                    </p>
+                    <section style="width: 100%;">
+                        <img src="images/dataScience.png" style="display: block; width: 50%;margin: 0 auto;">
+                    </section>
+                    <p>
+                        The algorithm would work in the  following way:  past data, such as the solar energy prices as well as plant production data, is prepared and then fed into our R and Python algorithm. Based on that, the AzureML would generate a forecast of the future energy prices as well as future performance which is then saved into an SQL Azure Database. Finally, the Azure WebApp presents the prediction in form of graphs and tables.
+                        The current architecture of the project (which is being used to predict the plant revenue) works in a similar manner to what we are planning to do.
+                    </p>
+                    <hr />
+                </section>
+
+            </div>
+        </section>
+    </article>
+
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
