@@ -45,34 +45,263 @@
     <!-- Main -->
     <article id="main">
         <header>
-            <h2>Architecture Diagrams</h2>
+            <h2>HCI</h2>
         </header>
         <section class="wrapper style5">
             <div class="inner">
 
                 <section>
-                    <h4>Chatbot Architecture</h4>
-                    <p>In terms of the Chatbot architecture, our team decided to use the Microsoft Azure Bot Framework in order to build and test the bot. How this will will work will be as shown in the diagram below:</p>
-                </section>
-                <section>
-                    <img src="images/bot.png" style="width: 100%;">
-                    <p>Firstly, the chatbot will be connected to a database that contains all the relevant information about the plants in a user's portfolio, so that if the user will ask a specific question, the bot will know where to retrieve that data from.
-                        Secondly, the bot will be developed and trained by our team to to recognize specific topics and intents in order to give appropriate answers to the user. This will be done using the Language Understanding(LUIS) tool provided by Microsoft. LUIS is a machine learning-based service used to build natural language into apps, bots and IoT devices. </p>
+                    <h4>Gathering User Data</h4>
+                    <p>Before our team started designing the prototypes for the Chatbot and the Data Science part, we decided to conduct some research by asking some of our colleagues to answer some survey questions.
+                        They were asked questions about User Interface and Chatbot features that they would like to see implemented. (the proportions on the charts are in percentages %)</p>
+                    <div class="chart-container" style="position: relative; height:60vh; width:100%; margin-bottom: 2%">
+                        <canvas id="chart1" style="float: left;max-width: 50%; height: 100%;"></canvas>
+                        <canvas id="chart2" style="float: right;max-width: 50%; height: 100%;"></canvas>
+                    </div>
+                    <div class="chart-container" style="position: relative; height:60vh; width:100%; margin-bottom: 2%">
+                        <canvas id="chart3" style="float: left;max-width: 50%; height: 100%;"></canvas>
+                        <canvas id="chart4" style="float: left;max-width: 50%; height: 100%;"></canvas>
+                    </div>
+                    <div class="chart-container" style="position: relative; height:60vh; width:100%; margin-bottom: 2%">
+                        <canvas id="chart5" style="float: left;max-width: 50%; height: 100%;"></canvas>
+                        <canvas id="chart6" style="float: left;max-width: 50%; height: 100%;"></canvas>
+                    </div>
+
                     <hr />
                 </section>
                 <section>
-                    <h4>Data Science Architecture</h4>
-                    <p>
-                        For the Data Science part of our project, we researched possible algorithms that might give us more precise and accurate predictions of the solar energy production and revenue. We concluded that the Random Forest algorithm is the best solution to begin working with on the implementation of the new features (Plant Performance Forecasting and Energy Prices Forecasting). The algorithm is currently being used by our client for Irradiance Forecasting.
-                    </p>
-                    <section style="width: 100%;">
-                        <img src="images/dataScience.png" style="display: block; width: 50%;margin: 0 auto;">
-                    </section>
-                    <p>
-                        The algorithm would work in the  following way:  past data, such as the solar energy prices as well as plant production data, is prepared and then fed into our R and Python algorithm. Based on that, the AzureML would generate a forecast of the future energy prices as well as future performance which is then saved into an SQL Azure Database. Finally, the Azure WebApp presents the prediction in form of graphs and tables.
-                        The current architecture of the project (which is being used to predict the plant revenue) works in a similar manner to what we are planning to do.
-                    </p>
+                    <h4>Scenario</h4>
+                    <p>After we have created the personas, we got an general idea of why and how the user will use our appplication. We came up with a scenario which summerize well the interaction between the user and our web. </p>
+                    <h5>Renewables.ai scenario</h5>
+                    <p> Mark is a 30 year old entrepreneur who has just started his own business. His company is a local energy provider. After a thorough research, he reached the conclusion that green energy is more profitable on the long term. Because the company’s quarter is located in Eastbourne, he thought about taking advantage of the geographical potential of the area and built a solar power plant. Being new on the market and without any previous experience in solar energy, he turned to Renewables.AI platform. Mark can log into his account and can visualize a personalized view of the data received from the panels. He now has a good estimation of how much energy the panels are going to produce each day, as well as a precise prediction of how much revenue he can make daily. This gives him a good feedback on how well his company is performing and helps him make decision for the long term. When he wants to see quick information such as the weather forest for the next 7 days or a summary of the plant info, he interacts with the chat box integrated in the user interface. Moreover, whenever Mark needs guidance on how to interact with the graphs, the chat box will explain him to do it.  Despite him not having any previous experience with solar energy, he is able to stay a valid competitor in the market.</p>
                     <hr />
+                </section>
+                <section>
+                    <h4>Iterations</h4>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Iteration</th>
+                                <th>Comments</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <img src="images/iter1.jpg" style="width: 90%"/>
+                                </td>
+                                <td style="float: left">
+                                    <ul>
+                                        <li>2 pages [1]</li>
+                                        <li>Non-interative graph</li>
+                                        <li>Each plant has own graph</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <img src="images/poza1.jpg" style="width: 90%"/>
+                                </td>
+                                <td style="float: left">
+                                    <ul>
+                                        <li>Prediction button to switch between past actual data and future predictions</li>
+                                        <li>Buttons to alter timeframe</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <img src="images/poza4.jpg" style="width: 90%"/>
+                                </td>
+                                <td style="float: left">
+                                    <ul>
+                                        <li>Prediction line toggle to show and hide the prediction data for previous days</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <img src="images/iter4.jpg" style="width: 90%"/>
+                                </td>
+                                <td style="float: left">
+                                    <ul>
+                                        <li>Simiplifies timeframe with timeline selection</li>
+                                        <li>Ability to add multiple plants making comparisons easier</li>
+                                        <li>Flexibility on showing past predictions</li>
+                                        <li>Graph lines togglable and option boxes collapsable to
+                                            prevent cluttering [6]</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <img src="images/iter5.png" style="width: 90%"/>
+                                </td>
+                                <td style="float: left">
+                                    <ul>
+                                        <li>Merged toggles in 1 field box</li>
+                                        <li>Replaced timeline with more intuitive buttons (as requested by user feedback - see evauluation)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <img src="images/iter6.png" style="width: 90%"/>
+                                </td>
+                                <td style="float: left">
+                                    <ul>
+                                        <li>Wireframe with graph and bot to show the overall layout of the web application [3]</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section>
+                    <h4>Sketches</h4>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="images/poza1.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="images/poza2.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="images/poza3.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="images/poza4.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="images/poza5.jpg" style="width:100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                    <hr />
+                </section>
+                <section>
+                    <h4>Data Science Prototype</h4>
+                    <p> We used the library Chart.js to implement the interactive Prototype of the graph. The user can now click the "Add Actual Production" or the "Remove Actual Production" buttons to
+                        show or hide the Actual Production line and the "1 hour" button to show the Revenue and Price Prediction for the next hour. For now, just this
+                        button is implemented and can be clicked multiple times to show a further prediction. Nevertheless, the current prediction lines are plotted
+                        using randomized data, which is due to be replaced with a proper dataset at a later stage of the project. One of the main aims is to also improve
+                        the accuracy of the prediction lines using machine learning algorithms.</p>
+                    <div class="chart-container" style="position: relative; height:45vh; width:100%; margin-bottom: 100px">
+                        <canvas id="chart" style="margin: 0 auto;"></canvas>
+                    </div>
+                    <ul class="actions">
+                        <li style="padding: 10px; padding-top: 0px">
+                            <button id="remove" onClick="this.disabled = true;">Add Actual Production</button>
+                            <button id="add" type="button" disabled>Remove Actual Production</button>
+                        </li>
+                        <li style="padding: 10px; padding-top: 0px">
+                            <button id="1day">3 hours</button>
+                            <button id="2days" onClick="this.disabled = true;">1 day</button>
+                            <button id="1week" onClick="this.disabled = true;">1week</button>
+                            <button id="1month" onClick="this.disabled = true;">1month</button>
+                        </li>
+                        <li style="padding: 10px; padding-top: 0px">
+                            <button id="remove1" type="button" disabled>Remove 3 hours</button>
+                        </li>
+                    </ul>
+                    <hr />
+                </section>
+                <section>
+                    <h4>Bot Prototype</h4>
+
+                    <p>After conducting some research into how chatbots work and what techniques can be used to build rich and capable bots, our
+                        team started to sketch some straightforward interactions with the so called "Elastabot. As, we discovered that we can implement the
+                        ability to send or receive attachments, ask the bot for more information by pressing the relevant buttons or by asking direct questions,
+                        we began by drawing some basic conversations. We are aiming to later implement the bot to using LUIS(Natural Language Understanding Software) so that it could make relevant
+                        suggestions based on the conversation with the user.</p>
+
+                    <div class="12u"><span class="image fit"><img src="images/poza3.jpg" alt="" /></span></div>
+
+                    <div style="overflow: hidden; padding: 2.5%">
+                        <script type='text/javascript' src='https://app.botsociety.io/js/lib/embedsoc.js'></script>
+                        <p><span class="image left"><a class='botsoc' href='https://app.botsociety.io/emb/59efb55d7844dd0f0098a26b?p=afe77945cde550176ac62eb43b802cd88e0ad2aa' target='medium'></a></span>
+                            In order to create an interactive version of the Elastabot, we chose to use the tools provided by the Botsociety. Botsociety offers an online
+                            platform that can be used to create interactive chatbot prototypes that can be shared with other users. As we wanted our bot to be able to
+                            interact in a number of different ways, Elastabot can not only offer "button" alternatives, but also understand regular questions and
+                            browse the Internet for information. It can answer questions related to the plant/s owned by the user, user interface navigation and even topics
+                            such as weather forecast and/or solar energy. The bot is currently only set to ask a series of standard questions after it finishes answering the user's initial question, such as "Is there anything else I could help you with?". Our team is aiming to create an interactive chatbot using machine learning algorithms that will be able to hold a fluent conversation and even make suggestionsbased on the conversation with the user.
+                        </p>
+
+                    </div>
+                    <hr />
+                </section>
+                <section>
+                    <h4>Prototypes Evaluation</h4>
+                    <p> In order to evaluate our prototypes, we used the Heuristic Evaluation as well as user testing.</p>
+                    <p> Our main goal was to come up with user-friendly features that enabled users to get all kind of information, from the prediction line on the graph to a quick presentation on how to use Renewables.AI with the help of our chatbox.</p>
+                    <p>After the finishing the first ptotoype, we saw some flaws which we later fixed, as they are presented in the Heuristic Evaluation  </p>
+
+
+
+                    <table style="width:100%">
+                        <tr>
+                            <th>Problem	no.</th>
+                            <th>Location&Description</th>
+                            <th>Heuristic</th>
+                            <th>Solution</th>
+                            <th>Severity(0-4)</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Graph prediction - user could not show/hide the "actual revenue" line if he/she wanted</td>
+                            <td>User control and freedom</td>
+                            <td>Added a "remove" button </td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Graph prediction - different graphs for 1 day/1 week/1 month prediction</td>
+                            <td>Consistency and standards</td>
+                            <td>Created one graph with buttons for each option</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>The chatbox could not explain to new users how Renewables.AI works </td>
+                            <td>Flexibility and efficiency of use</td>
+                            <td>Incorporated this option into the chatbox</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Graph prediction - the user feedback for the timeline selector for the graph timeframe was that it's confusing and they would prefer simple buttons</td>
+                            <td>Consistency and standards</td>
+                            <td>In a later iteration we removed the timeline selector feature and replaced it with a group of buttons</td>
+                            <td>3</td>
+                        </tr>
+
+                    </table>
+                    <br>
                 </section>
 
             </div>
@@ -90,6 +319,462 @@
 <script src="assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/main.js"></script>
+<script src="Chart.js/dist/Chart.js"></script>
+<script src="Chart.js/samples/utils.js"></script>
+
+<script type="text/javascript">
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
 
 </body>
+<script>
+    var ctx1 = document.getElementById("chart1");
+    var chart1 = new Chart(ctx1, {
+        type: 'doughnut',
+        data: {
+            labels: ["Yes","No"],
+            datasets: [{
+                data: [71,29],
+                backgroundColor: [
+                    window.chartColors.yellow,
+                    window.chartColors.purple,
+                ],
+                label: 'First Chart'
+            }],
+            labels: [
+                "Yes","No"
+            ]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                text: ['Would you choose a chatbot', 'over an e-mail or a FAQ page?'],
+                fontSize: 25,
+                padding: 20
+            }
+        }
+    });
+
+    var ctx2 = document.getElementById("chart2");
+    var chart2 = new Chart(ctx2, {
+        type: 'doughnut',
+        data: {
+            labels: ["Energy Generated in the Past","Energy past prices","Profit", "Bad performance cases"],
+            datasets: [{
+                data: [35,29,23,13],
+                backgroundColor: [
+                    window.chartColors.grey,
+                    window.chartColors.blue,
+                    window.chartColors.red,
+                    window.chartColors.purple
+                ],
+                label: 'First Chart'
+            }],
+            labels: [
+                "Energy Generated in the Past","Energy past prices","Profit", "Bad performance cases"
+            ]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                text: ['As a solar plant owner, which feature', 'would you think is most important?'],
+                fontSize: 25,
+                padding: 20
+            }
+        }
+    });
+
+    var ctx3 = document.getElementById("chart3");
+    var chart3 = new Chart(ctx3, {
+        type: 'doughnut',
+        data: {
+            labels: ["Yes","No"],
+            datasets: [{
+                data: [89,11],
+                backgroundColor: [
+                    window.chartColors.blue,
+                    window.chartColors.red,
+                ],
+                label: 'First Chart'
+            }],
+            labels: [
+                "Yes","No"
+            ]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                text: ['Do you think some User Interface', 'navigation tips would be useful?'],
+                fontSize: 25,
+                padding: 20
+            }
+        }
+    });
+
+    var ctx4 = document.getElementById("chart4");
+    var chart4 = new Chart(ctx4, {
+        type: 'doughnut',
+        data: {
+            labels: ["3-day prediction of the solar energy production","3-day prediction of the solar energy price","More detailed graphs and trends"],
+            datasets: [{
+                data: [41,32,27],
+                backgroundColor: [
+                    window.chartColors.orange,
+                    window.chartColors.blue,
+                    window.chartColors.red,
+                ],
+                label: 'First Chart'
+            }],
+            labels: [
+                "3-day prediction of the solar energy production","3-day prediction of the solar energy price","More detailed graphs and trends"
+            ]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                text: ['Which one of these would you like', 'to have most in Renewables.AI?'],
+                fontSize: 25,
+                padding: 20
+            }
+        }
+    });
+
+    var ctx5 = document.getElementById("chart5");
+    var chart5 = new Chart(ctx5, {
+        type: 'doughnut',
+        data: {
+            labels: ["Yes","No"],
+            datasets: [{
+                data: [59,41],
+                backgroundColor: [
+                    window.chartColors.grey,
+                    window.chartColors.purple,
+                ],
+                label: 'First Chart'
+            }],
+            labels: [
+                "Yes","No"
+            ]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                text: ['Do you believe interacting with', 'a chatbot can be a time saver?'],
+                fontSize: 25,
+                padding: 20
+            }
+        }
+    });
+
+    var ctx6 = document.getElementById("chart6");
+    var chart6 = new Chart(ctx6, {
+        type: 'doughnut',
+        data: {
+            labels: ["Yes","No"],
+            datasets: [{
+                data: [61,39],
+                backgroundColor: [
+                    window.chartColors.green,
+                    window.chartColors.orange,
+                ],
+                label: 'First Chart'
+            }],
+            labels: [
+                "Yes","No"
+            ]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                text: ['Did you know that a chatbot can be', 'faster, less invasive and cost effective?'],
+                fontSize: 25,
+                padding: 20
+            }
+        }
+    });
+
+    var HOURS = ["00:00","3:00","6:00","9:00","12:00", "15:00", "18:00", "21:00", "24:00"];
+    var ctx = document.getElementById("chart");
+    var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["00:00","3:00","6:00","9:00","12:00", "15:00", "18:00", "21:00", "24:00"],
+            datasets: [{
+                label: "Production Forecast",
+                backgroundColor: '#cc65fe',
+                borderColor: '#cc65fe',
+                data: [{
+                    x: 10,
+                    y: 10
+                }, {
+                    x: 15,
+                    y: 20
+                }, {
+                    x: 25,
+                    y: 25
+                }, {
+                    x: 30,
+                    y: 30
+                }, {
+                    x: 27,
+                    y: 27
+                }, {
+                    x: 21,
+                    y: 21
+                }, {
+                    x: 18,
+                    y: 18
+                }, {
+                    x: 15,
+                    y: 15
+                }, {
+                    x: 10,
+                    y: 10
+                }
+                ],
+                fill: false,
+                cubicInterpolationMode: 'default',
+            }, {
+                label: "Solar Energy Price",
+                fill: false,
+                backgroundColor: '#36a2eb',
+                borderColor: '#36a2eb',
+                data: [
+                    {
+                        x: 10,
+                        y: 20
+                    }, {
+                        x: 15,
+                        y: 15
+                    }, {
+                        x: 15,
+                        y: 15
+                    }, {
+                        x: 15,
+                        y: 20
+                    }, {
+                        x: 15,
+                        y: 20
+                    }, {
+                        x: 15,
+                        y: 20
+                    }, {
+                        x: 15,
+                        y: 20
+                    }, {
+                        x: 15,
+                        y: 20
+                    }, {
+                        x: 15,
+                        y: 20
+                    }
+                ],
+            }]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                text: 'Solar Energy Revenue',
+                fontSize: 30,
+                padding: 20
+            },
+            tooltips: {
+                mode: 'index',
+                intersect: false,
+            },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            },
+            scales: {
+                xAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Hours'
+                    }
+                }],
+                yAxes: [{
+                    ticks:{
+                        min: 0,
+                        max: 40
+                    },
+                    display: true,
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Price'
+                    }
+                }]
+            }
+        }
+
+    });
+
+    document.getElementById('remove').addEventListener('click', function () {
+        this.disabled = true;
+        document.getElementById('add').disabled = false;
+        var set = {
+            label: 'Actual Production',
+            backgroundColor: '#eb101f',
+            borderColor: '#eb101f',
+            fill: false,
+            data: [
+                {
+                    x: 15,
+                    y: 22
+                },
+                {
+                    x: 15,
+                    y: 27
+                },
+                {
+                    x: 15,
+                    y: 28
+                },
+                {
+                    x: 15,
+                    y: 23
+                },
+                {
+                    x: 15,
+                    y: 23
+                },
+                {
+                    x: 15,
+                    y: 23
+                },
+                {
+                    x: 15,
+                    y: 23
+                },
+                {
+                    x: 15,
+                    y: 23
+                },
+                {
+                    x: 15,
+                    y: 23
+                }
+
+            ]
+        }
+        chart.data.datasets.push(set);
+        chart.update();
+    });
+
+    document.getElementById('add').addEventListener('click', function () {
+        this.disabled = true;
+        document.getElementById('remove').disabled = false;
+        var set = {
+            label: 'Actual Production',
+            backgroundColor: '#eb101f',
+            borderColor: '#eb101f',
+            fill: false,
+            data: [
+                {
+                    x: 15,
+                    y: 22
+                },
+                {
+                    x: 15,
+                    y: 27
+                },
+                {
+                    x: 15,
+                    y: 28
+                },
+                {
+                    x: 15,
+                    y: 23
+                },
+                {
+                    x: 15,
+                    y: 23
+                },
+                {
+                    x: 15,
+                    y: 23
+                },
+                {
+                    x: 15,
+                    y: 23
+                },
+                {
+                    x: 15,
+                    y: 23
+                },
+                {
+                    x: 15,
+                    y: 23
+                }
+
+            ]
+        }
+        chart.data.datasets.pop(set);
+        chart.update();
+    });
+
+    document.getElementById('1day').addEventListener('click', function () {
+        document.getElementById('remove1').disabled = false;
+        document.getElementById('2days').disabled = true;
+        document.getElementById('1week').disabled = true;
+        document.getElementById('1month').disabled = true;
+
+        var hour = HOURS[chart.data.labels.length % HOURS.length];
+
+        chart.data.labels.push([hour]);
+
+        chart.data.datasets.forEach(function (dataset) {
+            dataset.data.push(randomScalingFactor());
+        });
+
+        chart.update();
+    });
+
+    document.getElementById('remove1').addEventListener('click', function () {
+        chart.data.labels.splice(-1, 1);
+
+        chart.data.datasets.forEach(function (dataset, datasetIndex) {
+            dataset.data.pop();
+        });
+        chart.update();
+    });
+
+    chart.canvas.parentNode.style.height = '500px';
+
+</script>
 </html>
