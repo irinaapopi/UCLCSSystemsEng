@@ -53,33 +53,48 @@
 
                 <section>
                     <h4>Project Background and Client</h4>
-                    <p>Elastacloud Limited are a Data Science Consultancy that specializes in Data Science and its practical applications in the Business world.
-                        Renewables AI is a subdivision of Elastacloud that is currently developing a specialized product for the solar industry, and more specifically for people that are directly or indirectly involved with the production of solar energy and the revenue it generates.
-                        During the project, we were in contact with Allan Mitchell, Laura Da Silva (head of of the Data Science Division) and Bianca Furtuna (Data Science).
-                    </p>
-                </section>
-                <section>
-                    <p>The way the application is currently working is as follows: the client logs into his/her personal account that shows the solar plants under his/her management and he/she can visualize a personalized view of the revenue the plants are generating on a daily basis. The application is thus using Microsoft Azure Services, data from the Dark Sky API, data from the plant/s and machine learning to predict the revenue of the solar plants up to 48 hours in advance.</p>
+                    <h5>Our CLient</h5>
+                        <p>
+                            Elastacloud Limited has been a long-standing Microsoft Azure partner with specialisms in data science, data engineering and cloud. Elastacloud has had countless successes with customers over the years with some of the most challenging Azure and data-related projects for customers such as Asos, Marks and Spencers, JustGiving, IOI amongst many others.
+
+                        </p>
+                    <h5>Project Background</h5>
+                        <p>
+                            Elastacloud has teamed up with the largest asset manager of solar farms in Europe, Quintas Energy. In this joint venture, both companies are committed to building a data science platform, called Renewables.ai, to manage the lifecycle of solar farms from engineering to trading predictions.
+                        </p>
+                        <p>
+                            Renewables.ai, as a platform, will be used to predict near-real time output of solar energy farms. In this instance predictions based on combinations of model building and anomaly detection will enable the solar farm managers to respond better and build better component inventories.
+                        </p>
+                        <p>
+                            In addition to understanding the output, renewables.ai will provide decision support for energy traders and brokers that want to trade out their energy on the half-hourly market by understanding the production shortfalls, energy market movements and undersupply and oversupplies against power purchase agreements.
+                        </p>
+                        <p>
+                            Renewables.ai will also focus on better data strategies and ensure that data from the plant is as real-time as possible with IoT and streaming technologies being used in ingest data into Microsoft Azure.
+                        </p>
+                        <p>
+                            Some key technical challenges are:
+                        </p>
+                        <ul>
+                            <li>
+                                Working with incomplete data
+                            </li>
+                            <li>
+                                Using the newest techniques in Deep Learning to make better predictions by enriching data from the weather
+                            </li>
+                        </ul>
                     <hr />
                 </section>
                 <section>
                     <h4>Project Goals</h4>
                     <p>
-                        As the application is still in its early stages, there are some limitations that affect its prediction accuracy (Random Forest Algorithm is being used that only has an accuracy of up to 80%). As a result, our clients needed a new better algorithm that could be used to predict the solar energy production based on the irradiance forecast. Our team’s first task was thus to address this problem by researching and implementing an additional machine learning model that could be used to accurately predict the energy production.
-                    </p>
-                </section>
-                <section>
-                    <p>
-                        Moreover, our clients underlined the need of having a form of active interaction between the software and the users. Our team’s second task was to integrate a chatbot into their platform that would help the user with gathering quick data about their plants as well as helping them navigate through the platform.
+                        We have two main broad project goals. First, to build a conversational chatbot that can interact with the Renewables.ai data science platform to provide insightful responses to questions users ask it and thus enhancing the user experience (UX) of the platform. Second, to improve the prediction model used to predict the energy output of solar energy farms.
                     </p>
                     <hr />
                 </section>
                 <section>
                     <h4>Requirement gathering</h4>
                     <p>
-                        On our first meeting with our client, we got to know the company as well as their requirements for the project. We arranged the timeline of the project as well as talked about which features will be prioritized during the development.
-                        As a result, we agreed on a set of MOSCOW requirements with our client. The highest priority requirements are: to implement a chatbot, improve the accuracy of energy generated predictions, implement energy price predictions, and implement plant performance prediction.
-
+                        Our requirements were gathered by having several face-to-face meetings with our client where we discussed the scope of the project and negotiated a set of MoSCoW requirements. The requirements were subsequently refined and disambiguated by having a number of video calls and Slack conversations with our client.
                     </p>
                     <hr />
                 </section>
@@ -257,6 +272,12 @@
                                     <td>Develop a model that includes additional variables (e.g. weather)</td>
                                     <td>Could have</td>
                                     <td>Functional</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>The chatbot is conversational and user can interact with it in a natural human-like way. For example, it is able to have dialogs with the user by remembering what the user has previously said. And it does not require the user to ask questions in a specific structure such as it understand tomorrow as opposed to dd/mm/yyyy.</td>
+                                    <td>Could have</td>
+                                    <td>Non-Functional</td>
                                 </tr>
                                 </tbody>
                             </table>

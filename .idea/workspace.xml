@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="880e7888-971e-4e63-b602-aa0abbd908d8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Requirements2.html" afterPath="$PROJECT_DIR$/Requirements2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,17 +89,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="97" column="135" lean-forward="false" selection-start-line="97" selection-start-column="135" selection-end-line="97" selection-end-column="135" />
+            <state relative-caret-position="344">
+              <caret line="106" column="120" lean-forward="false" selection-start-line="106" selection-start-column="120" selection-end-line="106" selection-end-column="120" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#span#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#span#0;n#div#1;n#div#0;n#div#0;n#header#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#span#0;n#div#2;n#div#0;n#div#0;n#header#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#span#0;n#div#3;n#div#0;n#div#0;n#header#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#span#0;n#div#4;n#div#0;n#div#0;n#header#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#span#0;n#div#5;n#div#0;n#div#0;n#header#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#ul#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#ul#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -148,13 +149,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Requirements2.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Requirements2.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Requirements2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="34" column="69" lean-forward="false" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
+            <state relative-caret-position="-315">
+              <caret line="257" column="33" lean-forward="false" selection-start-line="257" selection-start-column="33" selection-end-line="257" selection-end-column="33" />
               <folding>
-                <element signature="n#style#0;n#img#0;n#section#0;n#section#6;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#section#0;n#section#4;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -225,11 +226,11 @@
         <option value="$PROJECT_DIR$/Design.html" />
         <option value="$PROJECT_DIR$/Evaluation2.html" />
         <option value="$PROJECT_DIR$/HCI.html" />
-        <option value="$PROJECT_DIR$/Requirements2.html" />
         <option value="$PROJECT_DIR$/Research2.html" />
         <option value="$PROJECT_DIR$/Testing.html" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Requirements2.html" />
       </list>
     </option>
   </component>
@@ -404,7 +405,7 @@
       <option name="presentableId" value="Default" />
       <updated>1508954268134</updated>
       <workItem from="1515499748578" duration="3054000" />
-      <workItem from="1521470205408" duration="13537000" />
+      <workItem from="1521470205408" duration="14177000" />
     </task>
     <task id="LOCAL-00001" summary="final structure">
       <created>1508955659428</created>
@@ -515,7 +516,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16591000" />
+    <option name="totallyTimeSpent" value="17231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1003,16 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Requirements2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="34" column="69" lean-forward="false" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#section#0;n#section#6;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Research2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1106,17 +1097,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="97" column="135" lean-forward="false" selection-start-line="97" selection-start-column="135" selection-end-line="97" selection-end-column="135" />
+        <state relative-caret-position="344">
+          <caret line="106" column="120" lean-forward="false" selection-start-line="106" selection-start-column="120" selection-end-line="106" selection-end-column="120" />
           <folding>
             <element signature="n#style#0;n#img#0;n#span#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#span#0;n#div#1;n#div#0;n#div#0;n#header#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#span#0;n#div#2;n#div#0;n#div#0;n#header#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#span#0;n#div#3;n#div#0;n#div#0;n#header#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#span#0;n#div#4;n#div#0;n#div#0;n#header#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#div#5;n#div#0;n#div#0;n#header#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#ul#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#ul#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Requirements2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="257" column="33" lean-forward="false" selection-start-line="257" selection-start-column="33" selection-end-line="257" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#section#0;n#section#4;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
