@@ -535,6 +535,240 @@
                             </tbody>
                         </table>
                     </div>
+                    <br>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Use Case</th>
+                                <th>Solar Energy Plant Energy Prediction</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>UC5</td>
+                            </tr>
+                            <tr>
+                                <td>Brief Description</td>
+                                <td>The system displays a graph that shows the predicted energy output of a solar energy plant for every hour for the next 48 hours.</td>
+                            </tr>
+                            <tr>
+                                <td>Primary Actors</td>
+                                <td>User</td>
+                            </tr>
+                            <tr>
+                                <td>Secondary Actors</td>
+                                <td>Chatbot</td>
+                            </tr>
+                            <tr>
+                                <td>Preconditions</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            The solar energy plant prediction model has been trained on historical data
+                                        </li>
+                                        <li>
+                                            The prediction model has made a prediction for the plant and stored the result in a database to be retrieved dynamically
+                                        </li>
+                                        <li>
+                                            The user has logged into the Renewables.ai platform
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Main Flow</td>
+                                <td>
+                                    <ol>
+                                        <li>
+                                            The user logs into Renewables.ai
+                                        </li>
+                                        <li>
+                                            The user selects one of their solar energy plants
+                                        </li>
+                                        <li>
+                                            The user chooses to view a 48 hour prediction of the solar energy output of the plant
+                                        </li>
+                                        <li>
+                                            The system displays a graph depicting the solar energy prediction for the next 48 hours
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Postconditions</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Alternative Flows</td>
+                                <td>None</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Use Case</th>
+                                <th>Add Planned Maintenance Work or Known Outages</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>UC6</td>
+                            </tr>
+                            <tr>
+                                <td>Brief Description</td>
+                                <td>The system provides an interface for the user to add planned dates for maintenance work or known outages for specific solar energy plants.</td>
+                            </tr>
+                            <tr>
+                                <td>Primary Actors</td>
+                                <td>User</td>
+                            </tr>
+                            <tr>
+                                <td>Secondary Actors</td>
+                                <td>Chatbot</td>
+                            </tr>
+                            <tr>
+                                <td>Preconditions</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            The user has at least 1 solar energy plant
+                                        </li>
+                                        <li>
+                                            The user is logged into the Renewables.ai platform
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Main Flow</td>
+                                <td>
+                                    <ol>
+                                        <li>
+                                            The user logs into the Renewables.ai platform
+                                        </li>
+                                        <li>
+                                            The user selects one of their solar energy farms
+                                        </li>
+                                        <li>
+                                            The user selects a date range
+                                        </li>
+                                        <li>
+                                            The user states whether the event is maintenance work or a known outage
+                                        </li>
+                                        <li>
+                                            The system stores this new knowledge in the database
+                                        </li>
+                                        <li>
+                                            The system updates the solar energy plant energy output predictions for this plant
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Postconditions</td>
+                                <td>
+                                    The database contains the date of the planned maintenance work or known outage of the specified solar energy plant
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Alternative Flows</td>
+                                <td>None</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Use Case</th>
+                                <th>Compare Past Energy Predictions with Actual Energy Output</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>UC7</td>
+                            </tr>
+                            <tr>
+                                <td>Brief Description</td>
+                                <td>
+                                    The system allows the user to examine the performance of the solar energy farm energy output prediction model by seeing how previous predictions compared to the actual energy output figures for a given plant
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Primary Actors</td>
+                                <td>User</td>
+                            </tr>
+                            <tr>
+                                <td>Secondary Actors</td>
+                                <td>Chatbot</td>
+                            </tr>
+                            <tr>
+                                <td>Preconditions</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            The user has at least 1 solar energy plant
+                                        </li>
+                                        <li>
+                                            The user is logged into the Renewables.ai platform
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Main Flow</td>
+                                <td>
+                                    <ol>
+                                        <li>
+                                            The user logs into the Renewables.ai platform
+                                        </li>
+                                        <li>
+                                            The user selects one of their solar energy farms
+                                        </li>
+                                        <li>
+                                            The user checks the checkbox to show past predictions
+                                        </li>
+                                        <li>
+                                            The user selects a date range
+                                        </li>
+                                        <li>
+                                            The system displays an additional line on the graph that indicates the past predictions
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Postconditions</td>
+                                <td>
+                                    None
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Alternative Flows</td>
+                                <td>
+                                    No previous predictions were made for the plant so only the actual energy output is shown
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr />
+                </section>
+                <section>
+                    <h4>Use Case Diagram</h4>
+                    <section>
+                        <img src="images/usecase.jpg" style="margin-left: 20%;width: 60%;">
+                    </section>
                     <hr />
                 </section>
 
