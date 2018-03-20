@@ -158,8 +158,8 @@
       <file leaf-file-name="Research2.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Research2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="438" column="367" lean-forward="false" selection-start-line="438" selection-start-column="367" selection-end-line="438" selection-end-column="367" />
+            <state relative-caret-position="224">
+              <caret line="160" column="23" lean-forward="false" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#section#0;n#section#1;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#section#1;n#section#1;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -195,6 +195,7 @@
       <find>wrapper</find>
       <find>left</find>
       <find>ima</find>
+      <find>h4</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -403,7 +404,7 @@
       <option name="presentableId" value="Default" />
       <updated>1508954268134</updated>
       <workItem from="1515499748578" duration="3054000" />
-      <workItem from="1521470205408" duration="18982000" />
+      <workItem from="1521470205408" duration="19725000" />
     </task>
     <task id="LOCAL-00001" summary="final structure">
       <created>1508955659428</created>
@@ -514,7 +515,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22036000" />
+    <option name="totallyTimeSpent" value="22779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1116,8 +1117,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Research2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="438" column="367" lean-forward="false" selection-start-line="438" selection-start-column="367" selection-end-line="438" selection-end-column="367" />
+        <state relative-caret-position="224">
+          <caret line="160" column="23" lean-forward="false" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#img#0;n#section#0;n#section#1;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#section#1;n#section#1;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
