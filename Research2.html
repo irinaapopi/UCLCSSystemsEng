@@ -60,41 +60,388 @@
                 </section>
                 <section>
                     <h4>Chatbot Technologies</h4>
+                    <h5>Microsoft Bot Framework</h5>
                     <p>
-                        For the chatbot we considered : Microsoft Bot Framework, Botkit, Alaas.
+                        The Microsoft Bot Framework is a widely used framework used to build and deploy high quality chatbots. It has its own Bot Builder SDK that includes .NET SDK and Node.js SDK. The entire system consists of three parts: Bot Connector, Developer Portal, and Bot Directory. The framework provides the Direct Line REST API, which can be used to host a bot in an application or website [1]. It is open source and available to all on Github, and it supports automatic translation to more than 30 languages as well as most channels from SMS to Skype.
                     </p>
                     <p>
-                        The <b>Microsoft Bot Framework</b> is one of the most famous frameworks used worldwide to create bots. The bot Framework is a standard Azure web application and enables the user to create a bot easily and quickly with either Node.JS or C#. The bot can be developed and debugged locally with the Bot Builder SDK. One important feature is that being an Azure web application, there is an option of continuous deployment. That means that any changes in the code that is to the source control (for example GitHub) is then automatically deployed on Azure. The most important feature of the Microsoft Bot Framework is that it uses LUIS (Language Understanding Intelligent Service). LUIS is a Machine learning-based service that helps build natural language understanding into the chatbot.
+                        The bot can be developed and debugged locally with the Bot Builder SDK. One important feature is that being an Azure web application, there is an option of continuous deployment. That means that any changes made to the source code in the source control (for example Git) is automatically deployed on Azure.
                     </p>
                     <p>
-                        <b>BotKit</b> is one other tool used to build chat bots, apps and custom integrations for major messaging platforms. Botkit is an open source toolkit from Howdy and can integrate bots in messaging platforms such as Slack. Each Botkit bot is actually a Node.js app, made up of the Botkit core library, a basic web server, and the application logic and plugins. One interesting feature of this chatbot framework is that can respond to non-verbal events as well like when a file gets uploaded, or a button gets clicked. These events are handled using an event handling pattern that should look familiar to most developers. Furthermore, most events in Botkit can be replied to like normal messages.
-                    </p>
-                    <p>
-                        The last chatbot framework we took into account is <b>Alaas</b> (chatbots.io). Alaas is based on the Pandorabots API. This API supports an open standard scripting language called Artificial Intelligence Markup Language (AIML), which is also XML-based.  The Pandorabots helps integrate the Alaas bot, hosting service and natural language processing engine into the creator’s own application. The bot can be programmed using Java, Node.JS or Python. In contrast to the other bots, you must purchase a plan in order to start coding your bot. The cheapest plan is the Developer one for $9 / month and includes the possibility to create up to 10 bots with 10 000 interactions.
+                        Microsoft Bot Framework understands users’ intents. Also, it is possible to incorporate LUIS for natural language understanding, Cortana for voice, and the Bing APIs for search. LUIS is A machine learning-based service to build natural language into apps, bots, and IoT devices. [2] It allows you to build models around a domain-specific topic using a GUI and deploy models to an HTTP endpoint with just one click and returns easy-to-use JSON.
                     </p>
                     <hr />
-                </section>
-                <section>
-                    <h4>
-                        Data Science Technologies
-                    </h4>
+                    <h5>BotKit</h5>
                     <p>
+                        Botkit is an open-source bot making toolkit made by the Howdy team written in Node.js.
+                        It is the leading developer tool for building chatbots, apps and custom integrations for major messaging platforms. It provides:
 
+                    <ul>
+                        <li>
+                            Easy-to-extend starter kits
+                        </li>
+                        <li>
+                            Fully-featured SDK with support for all major platforms
+                        </li>
+                        <li>
+                            Content management and design tools (with Botkit Studio)
+                        </li>
+                        <li>
+                            Built-in analytics and CRM tools (with Botkit Studio)
+                        </li>
+                        <li>
+                            Many of plugins and middlewares [3]
+                        </li>
+                    </ul>
+                    </p>
+                    <p>
+                        Plus, Botkit works with all the NLP services (like Microsoft LUIS and IBM Watson), can use any type of database, and runs on almost any hosting platform. [4]
+                    </p>
+                    <p>
+                        In addition it includes Botkit Studio. Botkit Studio is a dashboard and IDE designed to enhance Botkit. It includes a web-based interface for building and managing dialog, an activity console, third party integrations, and advanced analytics tools like customer segmentation, conversion funnels, and user retention metrics.
+                    </p>
+                    <p>
+                        Each Botkit bot is actually a Node.js app, made up of the Botkit core library, a basic web server, and the application logic and plugins. One interesting feature of this chatbot framework is that can respond to non-verbal events as well like when a file gets uploaded, or a button gets clicked. These events are handled using an event handling pattern that should look familiar to most developers. Furthermore, most events in Botkit can be replied to like normal messages.
                     </p>
                     <hr />
-                </section>
-                <section>
-                    <h4>
-                        Technologies chosen
-                    </h4>
+                    <h5>Alaas</h5>
                     <p>
-                        For the chatbot, we chose to go with the Microsoft Bot Framework. Since our clients mainly work with Microsoft products, they preferred us to use this framework since it could be compatible with all of their products.  Furthermore,  since one of our requirements was to make the chatbot able to hold a natural conversation with the user, the LUIS feature of the Azure framework seemed the most suitable for our project.
+                        Artificial Intelligence as a Service (Alaas) is A RESTful API for integrating artificially intelligent chatbots into applications.Alaas is based on the Pandorabots API. This API supports an open standard scripting language called Artificial Intelligence Markup Language (AIML), which is also XML-based. The Pandorabots helps integrate the Alaas bot, hosting service and natural language processing engine into the creator’s own application. The bot can be programmed using Java, Node.JS or Python. In contrast to the other bots, you must purchase a plan in order to start coding your bot. The cheapest plan is the Developer one for $9 / month and includes the possibility to create up to 10 bots with 10 000 interactions. [5]
+                    </p>
+                    <hr />
+                    <h4>Data Science - Energy Output Prediction</h4>
+                    <p>
+                        For the data science energy output prediction section of the project we researched a wide range of technologies.
+                    </p>
+                    <h5>Python</h5>
+                    <p>
+                        Python is an interpreted high-level programming language for general-purpose programming. Python has a design philosophy that emphasizes code readability, and a syntax that allows programmers to express concepts in fewer lines of code. It features a dynamic type system and automatic memory management which significantly reduces development time and allows you to quickly experiment with data. [6]
                     </p>
                     <p>
+                        In addition, Python has a wide range of libraries for Data Science. Pandas is a library written for Python which provides high-performance, easy-to-use data structures and data analysis tools as well as methods to import structured data. NumPy is another library which greatly helps Data Science taks by providing a wide range of high performance mathematical methods. Lastly, scikit-learn is a machine learning library for Python which includes many built-in machine learning models and methods for preprocessing data.
+                    </p>
+                    <hr />
+                    <h5>R (Programming Language)</h5>
+                    <p>
+                        R is the second most popular programming language used for Data Science, closely following Python. R is a programming language that is specifically designed for statistical computing and is widely used among statisticians and data miners for developing statistical software and data analysis. [7]
+                    </p>
+                    <p>
+                        R and its libraries implement a wide variety of statistical and graphical techniques, including linear and nonlinear modeling, classical statistical tests, time-series analysis, classification, clustering, and others. It often takes fewer lines of code to perform the same data science task that a Python program performs which allows for rapid development.
+                    </p>
+                    <p>
+                        Moreover, R’s extensive set of statistical libraries makes it particularly attractive choice for Data Science intensive projects. In particular, R has a large range of robust time series analysis libraries, such as “forecast” that includes support for ARIMA modelling, which Python is lacking.
+                    </p>
+                    <p>
+                        However, R has unique syntax and has a learning curve that can make writing code to perform simple tasks difficult to program. This is because R was designed for statisticians as opposed to programmers.
+                    </p>
+                    <hr />
+                    <h5>MATLAB</h5>
+                    <p>
+                        MATLAB combines a desktop environment tuned for iterative analysis and design processes with a programming language that expresses matrix and array mathematics directly. [8]
+                    </p>
+                    <p>
+                        The main advantages of MATLAB is that it provides a large range of high level (sometimes GUI-driven) libraries for Data Science tasks which means that much can be done without actually writing much code. In particular, a nonlinear autoregressive exogenous model (NARX) can be built with a few lines that is one of the models we are likely to experience with. [9]
+                    </p>
+                    <p>
+                        However, the main issue with using MATLAB is that it is a proprietary programming language and thus requires purchasing a license.
+                    </p>
+                    <hr />
+                    <h5>Scala</h5>
+                    <p>
+                        Scala is a JVM based functional programming language that is occasionally used by data scientists. Scala benefits involve scalability and ease of Spark integration. However, the limitation of Scala is that it lacks maturity and therefore has fewer libraries than Python and R.
+                    </p>
+                    <hr />
+                    <h5>TensorFlow Framework (Python)</h5>
+                    <p>
+                        TensorFlow is an open-source software library for dataflow programming across a range of tasks. It is a symbolic math library, and also used for machine learning applications such as neural networks. Its main benefit is that it allows you to more easily build and train neural networks in Python. However, a major disadvantage with using TensorFlow for this project is that it involves a steep learning curve. Since we only have 4 months to complete the project it is not an appropriate technology to use.
+                    </p>
+                    <hr/>
+                    <h5>Azure ML</h5>
+                    <p>
+                        Azure ML is a relatively new cloud-based machine learning too. It that uses an integrated development environment called ML Studio that allows data models to be build through drag-and-drop gestures and data flow diagrams. In addition it allows R code to be incorporated directly into Azure ML.
+                    </p>
+                    <p>
+                        The main benefits are its ease-of-use and wide range of built-in Data Science models.
+                        However Azure ML is a new product so it lacking libraries and it is buggy at times.
+                    </p>
+                    <hr/>
+                    <h5>Decision</h5>
+                    <p>
+                        We decided to use mainly Python because of its large variety of widely-used data science libraries, clean syntax, and ease to learn. However, we did experiment with some models using R when libraries for certain tasks did not exist in Python for example the ARIMA time series analysis model.
+                    </p>
+                    <hr/>
+                    <h4>Potential Algorithms</h4>
+                    <p>
+                        There were 3 classes of algorithms we considered to use for solar energy farm energy output prediction, namely, regression, time series analysis, and neural networks.
+                    </p>
+                    <p>
+                        Our dataset consisted of hourly weather data and hourly energy output for a number of real-life solar energy farms. The dataset was stretched over a 2 year time period and contained missing data and outliers.
+                    </p>
+                    <p>
+                        We were tasked with building a solar energy farm energy output prediction model. Our client told us that they had developed a Gradient Boosting Regressor model that produces an (80% MAPE) accurate 48 hour in the future forecast for the irradiance (measure of sun intensity) at a given plant. They said that our model could incorporate this irradiance forecast but it does not have to and could include other forecast/lead variables such as wind speed.
+                    </p>
+                    <hr />
+                    <h4>Regression</h4>
+                    <p>
+                        The regression class of algorithms is a potential class of algorithms that could be used to predict the energy output.
+                    </p>
+                    <section>
+                        <img src="images/regression.jpg" style="margin-left: 20%;width: 60%;">
+                    </section>
+                    <br>
+                    <p>
+                        General advantages of regression algorithms are:
+                        <ul>
+                            <li>
+                                Training period is relatively quick
+                            </li>
+                            <li>
+                                Additional feature variables can easily be added to the model
+                            </li>
+                            <li>
+                                Coefficients are interporatiable and can easily be adjusted
+                            </li>
+                            <li>
+                                Produces good results when an dependent variable is highly correlated with 1 or multiple independent variables.
+                            </li>
+                         </ul>
+                    </p>
+                    <p>
+                        General disadvantages of regression algorithms are:
+                        <ul>
+                            <li>
+                                The model needs to be retrained every time a new piece of data is collected in order to stay up-to-date which is particularly inefficient when making near-real time predictions
+                            </li>
+                            <li>
+                                All feature variables must be independent (i.e there cannot be any relationships between them) which limits the number of feature variables that can be used
+                            </li>
+                            <li>
+                                It is difficult to add planned maintenance work or known outages to the model
+                            </li>
+                            <li>
+                                They typically will not detect or react (adjust predictions for) to solar energy farm outages
+                            </li>
+                        </ul>
+                    </p>
+                    <hr />
+                    <h5>Linear Regression + Multiple Variable Linear Regression</h5>
+                    <p>
+                        Linear regression is a linear approach for modelling the relationship between a dependent variable and one or more independent variables.
+                    </p>
+                    <p>
+                        Advantages are that it is simple to understand and easy to train. However, the disadvantages are it is sensitive to outliers and assumes a completely linear relationship.
+                    </p>
+                    <hr/>
+                    <h5>Bayesian Linear Regression</h5>
+                    <p>
+                        Bayesian linear regression is an approach to linear regression in which the result is a whole range of inferential solutions, rather than a point estimate and a confidence interval as in classical regression.
+                    </p>
+                    <p>
+                        The advantage of this is that the confidence of the predictions can easily and also the maximum and minimum likely values can be obtained for the energy output.
+                        The disadvantages are that it has a high computation cost when it comes to making predictions and training the model.
+                    </p>
+                    <hr />
+                    <h5>Random Forest Regression</h5>
+                    <p>
+                        Random forest regression is a decision tree based method that constructs multiple decisions trees and merges the results of each decision tree to form a regression line.
+                        The advantages of random forest regression is that it can easily handle high dimensional data.
+                        The disadvantages are that it very often “overfits” (works well for training data but poorly for test data) the data.
+                    </p>
+                    <hr />
+                    <h5>SVM Regression</h5>
+                    <p>
+                        Support Vector Machine (SVM) is kernel function based method for regression. The of the goal the algorithm is to find a function f(x) that deviates from yn by a value no greater than ε for each training point x, and at the same time is as flat as possible.
+                        The main advantages of SVM regression analysis is that it is robust to outliers and it avoids “overfitting” the training data.
+                        However disadvantage is that is frequently outperformed by other forms of regression.
+                    </p>
+                    <hr />
+                    <h5>Time Series Methods</h5>
+                    <p>
+                        Time series analysis comprises methods for analyzing time series data in order to extract meaningful statistics and other characteristics of the data. Time series forecasting is the use of a model to predict future values based on previously observed values.
+                    </p>
+                    <section>
+                        <img src="images/timeseries.jpg" style="margin-left: 20%;width: 60%;">
+                    </section>
+                    <br>
+                    <p>
+                        General advantages of a time-series based model are:
+                        <ul>
+                            <li>
+                                Does not require retraining each time new data is collected
+                            </li>
+                            <li>
+                                It’s relatively easy to adjust predictions when planned maintenance work or known outages are input
+                            </li>
+                            <li>
+                                The model can detect when there are issues with a solar energy plant and adjust the future predictions
+                            </li>
+                         </ul>
+                    </p>
+                    <p>
+                        General disadvantages are:
+                        <ul>
+                            <li>
+                                It generally requires expertise and domain-specific knowledge to tune the parameters of a time series model
+                            </li>
+                            <li>
+                                Requires data to be a specific form/shape
+                            </li>
+                        </ul>
+                    </p>
+                    <hr />
+                    <h5>ARIMA</h5>
+                    <p>
+                        Autoregressive integrated moving average (ARIMA) models are fitted to time series data to predict future points in the series. In the case of energy output predictions. It does this by: first differencing the data (replacing values with the difference between their values and the previous values), second regressing the prior values of the energy output, last creating a linear combination of regression error terms and then using this to make predictions.
+                        Advantages of ARIMA:
+                        <ul>
+                            <li>
+                                Additional external regressors can be added to the model - thus making the model ARMAX
+                            </li>
+                            <li>
+                                A well-tuned model can produce impressive results
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        Disadvantages of ARIMA:
+                        <ul>
+                            <li>
+                                Requires extensive preprocessing of data (i.e. removing stationality, removing seasonality, removing trend, and differencing)
+                            </li>
+                            <li>
+                                Expertise in statististics is needed in order to tune the parameters of the model as automatic parameter tuning has poor performance (i.e. R “forecast”’s auto.arima performs very poorly)
+                            </li>
+                            <li>
+                                Linear.
+                            </li>
+                        </ul>
+                    </p>
+                    <hr />
+                    <h5>Facebook’s Open-Source Prophet Algorithm With Additional Regressor (Irradiance)</h5>
+                    <p>
+                        Prophet is a procedure for forecasting time series data. It is based on an additive model where non-linear trends are fit with yearly and weekly seasonality, plus holidays. Prophet is robust to missing data, shifts in the trend, and large outliers. The Prophet procedure is an additive regression model (which means its non-linear e.g. f(x) = g(x) + h(x), instead of linear e.g. f(x1,x2) = m1 * x1 + m2 * x2). It is a decomposable time series model with 3 main components:
+                        <ul>
+                            <li>
+                                trend (automatically detects changes in trends by inserting changepoints)
+                            </li>
+                            <li>
+                                seasonal components (e.g. daily, weekly, monthly, yearly)
+                            </li>
+                            <li>
+                                user-provided holidays (or planned maintenance work in our case).
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        The algorithm, in effect, frames the time series forecasting problem as a curve-fitting exercise, which is completely different from time series models like ARIMA that look for temporal dependence within the data. Therefore, the model loses important inferential advantages
+                        of using a generative model such as an ARIMA. But, it means that the model is more flexible, does not require data to conform to strict form, can fit to training data quickly, interpretable parameters that can be extended with external regressors.
+                    </p>
+                    <p>
+                        Main Advantages of Prophet:
+                        <ul>
+                            <li>
+                                Prophet makes it easier to create reasonable and accurate predictions
+                            </li>
+                            <li>
+                                Prophet predictions are customisable in ways that are intuitive to non-experts
+                            </li>
+                            <li>
+                                Models can be trained very fast due to Stan optimisations
+                            </li>
+                            <li>
+                                Provides methods (holiday methods) that can be used to adjust the predictions when dates of planned maintenance work are input
+                            </li>
 
+                        </ul>
+                    </p>
+                    <p>
+                        Main Disadvantages of Prophet:
+                        <ul>
+                            <li>
+                                Occasionally performs poorly - especially if a trend is falsely identified, but this can be fixed by adjusting/tuning the parameters of the model e.g. the maximum number changepoint parameter or seasonality aggressiveness parament
+                            </li>
+                            <li>
+                                Is often outperformed by a well parameter tuned ARIMA model because it exploits the temporal structure of the data as opposed to simply curve fitting [10]
+                            </li>
+                        </ul>
                     </p>
                     <hr />
+                    <h5>Recurrent Neural Network</h5>
+                    <p>
+                        Recurrent neural networks are a type of neural network that adds order to the input observations. This allows recurrent neural networks to learn the temporal context of input sequences in order to make better predictions. [11]
+                    </p>
+                    <section>
+                        <img src="images/neural.jpg" style="margin-left: 20%;width: 60%;">
+                    </section>
+                    <p>
+                        General advantages using recurrent neural network for time series forecast:
+                        <ul>
+                            <li>
+                                Robust to missing data
+                            </li>
+                            <li>
+                                Non-linear
+                            </li>
+                            <li>
+                                Can handle multiple input variables
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        General disadvantages using recurrent neural network for time series forecast:
+                        <ul>
+                            <li>
+                                Requires very large dataset with narrow time splices (probably every minute but our data set is hourly) to produce reasonable results
+                            </li>
+                            <li>
+                                Training is takes a very long time and is computationally heavy
+                            </li>
+                            <li>
+                                Model parameters/coefficients are hard to interpret
+                            </li>
+                        </ul>
+                    </p>
+                    <hr/>
+                    <h5>NARX</h5>
+                    <p>
+                        Nonlinear Autoregressive Neural Network with External Input (NARX). In the case of our energy output prediction model, the NARX model predicts a series of future values of energy output based on previous values of energy output and the previous values plus future values of irradiance. [11] Moreover, the time slice width would be around 60 seconds, as opposed to the 1 hour in which they currently are, and the model would be trained on multiple days before the prediction only.
+                    </p>
+                    <p>
+                        Advantages are:
+                        <ul>
+                            <li>
+                                It has been known to create accurate (low MAPE) predictions for the energy output of solar energy farms
+                            </li>
+                            <li>
+                                It does not require manual parameter tuning
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        Disadvantages are:
+                        <ul>
+                            <li>
+                                It requires narrower time slices than we have - 1 minute instead of 1 hour, to perform well
+                            </li>
+                            <li>
+                                Requires a deep understanding of neural networks and we only have 4 months.
+                            </li>
+                        </ul>
+                    </p>
+                    <hr />
+                    <h4>Data Science Algorithm chosen</h4>
+                    <p>
+                        Forecasting algorithm chosen: Prophet because it is considerable easier to create reasonable accurate predictions using the algorithm quickly. Furthermore, the model is flexible and can be customised by non-experts to enhance its performance. Moreover, the algorithm considers holidays that can be used to add planned dates for maintenance work. As well as the ability to manually add caps (saturations for logistical growth) and floors to predictions and changepoints to indicate changes in the trend of the data. Lastly, it can be trained very fast which makes it ideal for large scale forecasting for instance making forecasts for many solar energy plants.
+                    </p>
+                    <hr />
+                    <h5>Parameter Tuning</h5>
+                    <p>
+                        When attempting to improve the performance of a model it often involves making adjustments to the parameters of the model used. Indeed, this can be done manually, however sometimes this can become tedious and better results can be generated by using an algorithm to automatically select parameters that minimises the error (MAPE) of the model.
+                    </p>
+
+
                 </section>
+
 
             </div>
         </section>
