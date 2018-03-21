@@ -158,6 +158,17 @@
                         </li>
                     </ol>
                     <hr />
+                    <h5>Full Azure Deployment</h5>
+                    <p>
+                        Our clients did not request us to deploy the components on Azure and they plan to do that by themselves. However, we thought about what steps our clients must do in order to deploy it.
+                    </p>
+                    <p>
+                        Firstly, they must automate the code deployment using Github on Azure. This feature is available on the Azure Portal, in the “All Section” menu and “Continuous Deployment” option. Having the Github repository of our code, it is then easy to have the platform as well as the bot continuously running. We found this <a href="https://blog.github.com/2015-09-15-automating-code-deployment-with-github-and-azure/">Link</a> to be a nice tutorial for continuous deployment.
+                    </p>
+                    <p>
+                        Secondly, our clients must deploy the database to the SQL Azure database. This can be done using the SQL scripts. This allows the continuous deployment of the database as well. The best tutorial to do that is this <a href="https://docs.microsoft.com/en-us/vsts/build-release/apps/cd/deploy-database-sqlscripts?view=vsts">official documentation link</a> by Microsoft.
+                    </p>
+                    <hr />
                     <h4>Gantt Chart</h4>
                     <section>
                         <img src="images/gantt.jpg" style="margin-left: 10%;width: 80%;">
