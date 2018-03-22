@@ -96,6 +96,8 @@
                     </section>
                     <hr />
                     <h4>Critical evaluation of the project</h4>
+                    <hr />
+                    <h4>Chat Bot Evaluation</h4>
                     <h5>
                         User interface/User experience (if applicable)
                     </h5>
@@ -111,9 +113,6 @@
                     <h5>
                         Functionality
                     </h5>
-                    <p>
-                        Both of the project’s components are functional, both being ready to be incorporated within the Renewables.AI platform.
-                    </p>
                     <p>
                         The bot shows an almost perfect performance, by being able to understand the users’ requests and responding to them accordingly. The bot is thus not only able to ask questions whenever it does not recognise the request, but it can also access the database to get the right data and display it in a meaningful manner to the the user. The conversation between the bot and the user cannot yet be fully categorized as natural, human-like conversation since the chatbot’s main purpose is to aid the user with information. This component performs well as we conducted the performance and stress tests.
                     </p>
@@ -132,15 +131,192 @@
                     <p>
                         The total maintenance costs would be low for the owners since it is a profitable application and numerous solar farm owners would invest in this application in order to help their businesses grow.
                     </p>
-                    <h5>
+                    <hr />
+                    <h4>
                         Project Management
-                    </h5>
+                    </h4>
                     <p>
                         Our team managed to deliver the key requirements of the project on time to our clients. We used the Agile Methodology focusing on team collaboration and emphasizing incremental delivery.  We used Messenger as a communication channel where we would update each other on the current status of our tasks, as well as to ask for help whenever needed. We also had a common Google Drive folder where we held important documents such as bi-weekly reports,  project diagrams or video scripts. We also had a Microsoft Teams channel with our clients where we set up Skype or personal meetings alongside uploaded documents and reports regarding our work. We used Github as a version control hosting service, where we kept our code in private repositories.
                     </p>
-                    <h5>
+                    <hr />
+                    <h4>Data Science Model Evaluation</h4>
+                    <p>
+                        The data science part of the project involved us predicting the hourly energy output of solar energy plants for the next 48 hours, given 2 years of past hourly irradiance and energy data for a given plant as well as a 48 hour into the future hourly irradiance forecast.
+                    </p>
+                    <p>
+                        We considered models from two categories of forecasting methods:
+                    </p>
+                    <ul>
+                        <li>
+                            Time series methods
+                        </li>
+                        <li>
+                            Regression analysis.
+                        </li>
+                    </ul>
+                    <p>
+                        For the time series methods we considered:
+                    </p>
+                    <ul>
+                        <li>
+                            ARIMA
+                        </li>
+                        <li>
+                            Prophet
+                        </li>
+                    </ul>
+                    <p>
+                        Whereas for regression analysis we considered:
+                    </p>
+                    <ul>
+                        <li>
+                            Linear regression
+                        </li>
+                        <li>
+                            Random Forest regression
+                        </li>
+                    </ul>
+                    <p>
+                        We decided to evaluate and compare the performance of all 4 models above.
+                    </p>
+                    <p>
+                        Before evaluating the performance of each of the models we decided to further explore the data so that we could better understand potential issues models may face.
+                    </p>
+                    <p>
+                        The graph below shows the irradiance (kWh/m^2) against time for a 2 year time period for plant 3:
+                    </p>
+                    <section>
+                        <img src="images/ds1.png" style="margin-left: 20%;width: 60%;">
+                    </section>
+                    <p>
+                        The graph below shows the energy output (kWh) against time for a 2 year time period for plant 3:
+                    </p>
+                    <section>
+                        <img src="images/ds2.png" style="margin-left: 20%;width: 60%;">
+                    </section>
+                    <br>
+                    <p>
+                        The two graphs clearly indicates that there is strong positive linear correlation between the irradiance at a plant and the energy output of a plant. In fact, we calculated that Pearson product-moment correlation coefficient (PPMCC) for the two variables was 0.981 and the graph below shows the first 2 days for the data above with the irradiance plotted on the same graph as the energy output.
+                    </p>
+                    <section>
+                        <img src="images/ds3.png" style="margin-left: 20%;width: 60%;">
+                    </section>
+                    <br>
+                    <p>
+                        Therefore, we initially thought that, given the strong correlation between the two variables, a regression analysis based approach to the forecasting would produce the best results. However, thinking more deeply about the problem domain we discovered that a regression based approach would not always produce the best results. The reason for this can be seen in the graph above in the time period just before July. Where the is consistently high yet the energy output of the solar energy farm is 0 which indicates that the solar farm had an outage; perhaps it went down for maintenance work or broke unexpectedly.
+                    </p>
+                    <p>
+                        Nonetheless, the correlation between irradiance and energy output breaks down for a period of time in the data above which means that using a regression analysis based method that only considers the irradiance present at the plant will produce inaccurate and forecasts the the plant during this time period. Whereas, a time series method that is based on temporal dependencies and past energy values will detect the plant outage and outperform a regression analysis based method. Moreover, a time series method does not need to be completely restrained whenever new data arrives whereas a regression analysis based model does which is extremely inefficient.
+
+                    </p>
+                    <h5>Model Evaluation of Linear Regression vs Random Forest Regression</h5>
+                    <p>
+                        In statistics, the coefficient of determination, denoted R2 is the proportion of the variance in the dependent variable that is predictable from the independent variable(s). It measures how much the predicted value varies from the actual value. The closer the value is to 1 the lower the variance. However, this does not guarantee that the model fits the data (bias) well because it could had overfitted the data provided.
+                    </p>
+                    <p>
+                        The average R2 value for the Linear regression across all 5 plants was 0.974, whereas the average R2 value for the Random Forest regression across all 5 plants was 0.986.
+                        The mean absolute error for Linear regression was: 423.2 whereas the mean absolute error for Random Forest regression was 321.4. The diagram below shows (out-of-box) the performance of the two types regressions compared to each other for a 48 hour prediction using test data. blue is Linear regression, red is Random Forest regression, and green is the actual energy output.
+                    </p>
+                    <section>
+                        <img src="images/ds4.png" style="margin-left: 20%;width: 60%;">
+                    </section>
+                    <br>
+                    <p>
+                        This suggests that the Random forest regression algorithm fits the data better and is likely to produce highly quality forecasts than the Linear regression algorithm. However, before drawing this conclusion from the metrics and the graph above, we plotted the residuals of the random forest algorithm as shown below.
+                    </p>
+                    <section>
+                        <img src="images/ds5.png" style="margin-left: 20%;width: 60%;">
+                    </section>
+                    <br>
+                    <p>
+                        And the density plot of the residuals are shown below.
+                    </p>
+                    <section>
+                        <img src="images/ds6.png" style="margin-left: 20%;width: 60%;">
+                    </section>
+                    <br>
+                    <p>
+                        This close to normal distribution shows that the random forest has low bias. Therefore the Random Forest regression model fits the data very well as it has low variance and low bias and should be outperforms the Linear regression model.
+                    </p>
+                    <h5>Comparison of Time Series Methods - ARIMA vs Prophet</h5>
+                    <p>
+                        The graphs below shows the average forecast given by the ARIMA model followed by the actual values.
+                    </p>
+                    <section>
+                        <img src="images/ds7.png" style="margin-left: 20%;width: 60%;">
+                    </section>
+                    <br>
+                    <section>
+                        <img src="images/ds8.png" style="margin-left: 20%;width: 60%;">
+                    </section>
+                    <br>
+                    <p>
+                        The parameters used by the ARIMA model were selected automatically by R forecast package using auto.arima. ARIMA was able to identify the general shape of the data and produce a reasonable forecast. However, the mean absolute error (3534.2) calculated from using a rolling window of the dataset was significantly greater than the regression analysis based methods.
+                    </p>
+                    <p>
+                        The graph below shows an example forecast generated using the Prophet (as well as a baseline comparison of the Random Forest regression forecast)
+                    </p>
+                    <section>
+                        <img src="images/ds9.png" style="margin-left: 10%;width: 80%;">
+                    </section>
+                    <br>
+                    <p>
+                        In this example:
+                    </p>
+                    <p>
+                        Mean absolute error (Prophet) = 42.6056837032
+                    </p>
+                    <p>
+                        Mean absolute error (Random Forest regression) = 36.1351450921
+                    </p>
+                    <p>
+                        Which meant that Prophet performanced almost as well as the Random Forest Algorithm.
+                        After using a rolling window comparison of the dataset we discovered that on average:
+                    </p>
+                    <p>
+                        Mean absolute error (Prophet) = 83.6056837032
+                    </p>
+                    <p>
+                        Mean absolute error (Random Forest regression) = 49.1351450921
+                    </p>
+                    <p>
+                        Which meant that the Random Forest regression had lower variance than the Prophet algorithm. However, after plotting the residuals for both algorithms it was clear that only the Prophet algorithm detected and reacted to outages of solar energy plants which is shown by the graph below.
+                    </p>
+                    <section>
+                        <img src="images/ds10.png" style="margin-left: 10%;width: 80%;">
+                    </section>
+                    <br>
+                    <p>
+                        For this example:
+                    </p>
+                    <p>
+                        Mean absolute error (Prophet) = 8.39729535258
+                    </p>
+                    <p>
+                        Mean absolute error (Linear Regression) = 331.831629189
+                    </p>
+                    <h5>Model Selection</h5>
+                    <p>
+                        After extensive model evaluation (cross validation, residual checking, and baseline comparisons), in conclusion we decided to select the Prophet model for four main reasons:
+                    </p>
+                    <ol>
+                        <li>
+                            It takes into account plant outages
+                        </li>
+                        <li>
+                            It provides an easy way to add changepoints to indicate changes in the trend of the data for example when a new solar panel is installed at a plant the trend in data changes
+                        </li>
+                        <li>
+                            It allows (through its add holiday interface) for planned maintenance work dates to be incorporated into the model
+                        </li>
+                        <li>
+                            Does not require complete retraining when new data arrives
+                        </li>
+                    </ol>
+                    <hr />
+                    <h4>
                         Future Work
-                    </h5>
+                    </h4>
                     <p>
                         Supposing we had another 3 more months to work on our project, one of our main tasks would be to make the Data Science part and Chatbot System integration. We could also try to implement the last “could have” requirement : ” The chatbot is conversational and user can interact with it in a natural human-like way”.  We could have implemented this feature by focusing on the language understanding aspect as well as making it keep track of the past questions that had been asked.
                     </p>
