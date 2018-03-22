@@ -88,6 +88,10 @@
                     <p>
                         During the development of the chatbot, we used the “Black box testing” technique in order to see if the chabot replies with the right answer for the user’s questions. This testing method was by far the most used and very efficient during the development of our project. Firstly, we sketched the questions the user might ask the bot and generated the desired answer the bot should output. We then tested these questions on the emulator and spotted possible errors of the bot. After observing the flaws, we would try to solve it and then test the new features afterwards. Some of the most errors we spot using the “Black box testing” were related to tautology: sometimes the bot could not recognize entities (in our case plant names). In order to solve this issue, we had to think of more relevant intents to help the bot find where the plant name lies generally in the sentence structure.
                     </p>
+                    <section>
+                        <img src="images/integration.png" style="margin-left: 10%;width: 80%;">
+                        <span><center>Screenshots of tests that pass</center></span>
+                    </section>
                     <hr />
                 </section>
                 <section>
@@ -109,6 +113,10 @@
                     <p>
                         For out bot, we did system testing by seeing if the bot interacts with the LUIS platform as well as with the database. That means that the bot should recognize entities and intents using LUIS, gather data from the database by executing a SQL query specific to every type of intent, and output the desired answer to the user. Thus, we tried to simulate a conversation between a real user and the bot and see if the flow of the conversation is natural. As a result, the bot was triggered by a list of questions which were asked sequentially.
                     </p>
+                    <section>
+                        <img src="images/system.png" style="margin-left: 10%;width: 80%;">
+                        <span><center>Screenshotof our system test</center></span>
+                    </section>
                     <hr />
                 </section>
                 <section>
@@ -119,6 +127,10 @@
                     <p>
                         We wanted to see if our bot can handle many requests for the user and therefore conducted a stress testing. This was done by sending 20 requests per second for 5 seconds. Ideally, the system should have responded with 100 correct responses within 5 seconds. This test was conducted and was indeed successful, concluding that the bot can cope with multiple requests from the users.
                     </p>
+                    <section>
+                        <img src="images/stress.png" style="margin-left: 10%;width: 80%;">
+                        <span><center>Bits of code from our stress test</center></span>
+                    </section>
                     <hr />
                 </section>
                 <section>
@@ -150,6 +162,10 @@
                     <p>
                         While developing our bot, we felt that we have to use the unit test to verify the LUIS API. Unit testing could not be done by checking each function of the bot since each function needed to interact to both the database and the LUIS API and this test would have fallen under “functional testing”. As a result, the smallest unit we could test was testing the LUIS API. The unit test involved reviewing if the API respond quickly to the requests and if it responds correctly to them.
                     </p>
+                    <section>
+                        <img src="images/unit.png" style="margin-left: 10%;width: 80%;">
+                        <span><center>Example of code for the LUIS unit tests</center></span>
+                    </section>
                     <hr />
                 </section>
                 <section>
